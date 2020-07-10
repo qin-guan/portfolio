@@ -97,7 +97,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2017</Text>
+                <Text keyboard>2017-Present</Text>
                 Co-Founder & CTO, CodeCollab.io
               </Title>
               <Text>
@@ -110,11 +110,11 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2019</Text>
+                <Text keyboard>2018</Text>
                 Swift Accelerator Program (2018)
               </Title>
               <Text>
-                I  the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator Program</a>, an
+                I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift and also marketing and design principles.
               </Text>
             </Timeline.Item>
             <Timeline.Item>
@@ -150,9 +150,6 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Software Engineer, Outside Technologies Private Limited</Title>
               <Text>
-                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
-                assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
-                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
               </Text>
             </Timeline.Item>
           </Timeline>
