@@ -7,6 +7,7 @@ export default function Page(props: { children?: React.ReactNode, style?: CSSPro
       height: "100vh",
       width: "100vw",
       paddingTop: '5rem',
+      overflow: 'scroll',
       ...props.style
     }}>
         <Row>
