@@ -150,6 +150,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Software Engineer, Outside Technologies Private Limited</Title>
               <Text>
+                At Outside, I worked on the <a href={"https://web.outsideapp.co"} target={"_blank"}>web app</a> that is in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test and deploy at greater efficiency.
               </Text>
             </Timeline.Item>
           </Timeline>
