@@ -1,0 +1,7 @@
+a, a:hover, a:visited {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color: white;
+}
