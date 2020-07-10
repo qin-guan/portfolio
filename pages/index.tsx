@@ -189,13 +189,52 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             </Timeline.Item>
           </Timeline>
         </Content>
+        <Divider/>
         <Content>
           <Title style={{
             fontFamily: "Metropolis"
           }}>
             My Projects
           </Title>
-
+          <Space direction={"vertical"} size={"large"}>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                SST Open House App</Title>
+              <Text>For SST's annual open house, I developed the <a
+                href={"https://apps.apple.com/sg/app/sst-open-house-2019/id1459040697"} target={"_blank"}>Open House
+                App</a> to help users learn more about the
+                events they can take part in during the event, and also help them plan their time at the school.
+                Unfortunately, the source code for the app has been deleted. It was previously open sourced. </Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2020/2021</Text>
+                SST Open House App</Title>
+              <Text>I also developed the Open House App for 2020, however, due to the COVID-19 situation, the app was
+                never completed and released. The source code will however be used to build the 2021 Open House App.
+                Check out the
+                code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a></Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2018-2020</Text>
+                TTSH PACE</Title>
+              <Text>I helped to develop the TTSH PACE app, a collaboration between SST and TTSH. The app aims to help
+                doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
+                utilities like calculators for common formulas. However, due to unforeseen circumstances, the project was
+                unfortunately abandoned.</Text>
+            </div>
+          </Space>
         </Content>
       </Page>
     )
