@@ -42,15 +42,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontFamily: "Metropolis"
                   }}>Hi, I'm Qin Guan</Title>
                 </motion.div>
-                <Title style={{
-                  fontFamily: "Inter"
-                }} level={4}>I'm a student from the School of Science and Technology, Singapore</Title>
-              </Space>
-            </Col>
-            <Col xs={0} sm={0} md={0} lg={6} xl={6}>
-              <Space direction={"vertical"} size={"large"}>
-                <Avatar size={150} src="/me.jpg"/>
-                <Space style={{justifyContent: 'flex-end', display: 'flex'}}>
+                <Space>
                   <a href={"https://github.com/qin-guan"} target={"_blank"}>
                     <GithubOutlined style={{
                       fontSize: "2rem"
@@ -67,7 +59,13 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     }}/>
                   </a>
                 </Space>
+                <Title style={{
+                  fontFamily: "Inter"
+                }} level={4}>I'm a student from the School of Science and Technology, Singapore</Title>
               </Space>
+            </Col>
+            <Col xs={0} sm={0} md={0} lg={6} xl={6}>
+              <Avatar size={150} src="/me.jpg"/>
             </Col>
           </Row>
         </Content>
@@ -93,32 +91,68 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               My experiences
             </Title>
           </motion.div>
-          <Timeline mode={'left'}>
-            <Timeline.Item label={"2017"}>
+          <Timeline>
+            <Timeline.Item>
               <Title style={{
-                fontFamily: 'Inter',
+                fontFamily: "Inter",
                 fontWeight: 500
-              }} level={4}>Co-Founder & CTO, CodeCollab.io</Title>
+              }} level={4}>
+                <Text keyboard>2017</Text>
+                Co-Founder & CTO, CodeCollab.io
+              </Title>
               <Text>
-                Together with Carl, my classmate, we created CodeCollab. A collaborative code editor that allows anyone to compile, collaborate and create code anywhere, at any time.
+                Together with Carl, my classmate, we created CodeCollab. A collaborative code editor that allows anyone
+                to compile, collaborate and create code anywhere, at any time.
               </Text>
             </Timeline.Item>
-            <Timeline.Item label={"2018"}>
+            <Timeline.Item>
               <Title style={{
-                fontFamily: 'Inter',
+                fontFamily: "Inter",
                 fontWeight: 500
-              }} level={4}>Chief Technology Officer (iOS), SST Inc</Title>
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                Swift Accelerator Program (2018)
+              </Title>
               <Text>
-                As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I also maintained SST Inc's iOS resources, such as deploying apps to the app store.
+                I  the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator Program</a>, an
               </Text>
             </Timeline.Item>
-            <Timeline.Item label={"2019"}>
+            <Timeline.Item>
               <Title style={{
-                fontFamily: 'Inter',
+                fontFamily: "Inter",
                 fontWeight: 500
-              }} level={4}>Chief Technology Officer (React), SST Inc</Title>
+              }} level={4}>
+                <Text keyboard>2018</Text>
+                Chief Technology Officer (iOS), SST Inc</Title>
               <Text>
-                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also assisted them in getting started with the framework. I conducted a 5 day course on React Native, which covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
+                As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
+                also maintained SST Inc's iOS resources, such as deploying apps to the app store.
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                Chief Technology Officer (React), SST Inc</Title>
+              <Text>
+                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
+                assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
+                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                Software Engineer, Outside Technologies Private Limited</Title>
+              <Text>
+                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
+                assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
+                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
               </Text>
             </Timeline.Item>
           </Timeline>
