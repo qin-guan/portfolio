@@ -187,7 +187,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
                 technologies</a> that is
                 in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
-                Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test
+                Cloud. While working, I also implemented CI/CD into the workflow to help the team test
                 and deploy at greater efficiency.
               </Text>
             </Timeline.Item>
@@ -363,6 +363,87 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                       title: "ASP.NET",
                       link: "https://asp.net"
                     }, { title: "Django", link: "https://djangoproject.com" }]}
+                    renderItem={item => (
+                      <List.Item>
+                        <a href={item.link} target={"_blank"}>
+                          <Text>{item.title}</Text>
+                        </a>
+                      </List.Item>
+                    )}
+              />
+            </Panel>
+            <Panel header="DevOps" key="DevOps">
+              <List grid={{
+                gutter: 16,
+                xs: 1,
+                sm: 2,
+                md: 4,
+                lg: 4,
+                xl: 6,
+                xxl: 3
+              }}
+                    dataSource={[{ title: "Azure DevOps (Agile)", link: "https://dev.azure.com" }, {
+                      title: "Google Cloud Platform",
+                      link: "https://cloud.google.com"
+                    }, { title: "Azure", link: "https://azure.com" }, {
+                      title: "Tencent Cloud",
+                      link: "https://intl.cloud.tencent.com"
+                    }, { title: "Github Actions", link: "https://github.com" }, {
+                      title: "Teamcity",
+                      link: "https://jetbrains.com/teamcity"
+                    }, { title: "Kubernetes", link: "https://k8s.io" }, {
+                      title: "Docker",
+                      link: "https://docker.com"
+                    }]}
+                    renderItem={item => (
+                      <List.Item>
+                        <a href={item.link} target={"_blank"}>
+                          <Text>{item.title}</Text>
+                        </a>
+                      </List.Item>
+                    )}
+              />
+            </Panel>
+            <Panel header="Security" key="security">
+              <List grid={{
+                gutter: 16,
+                xs: 1,
+                sm: 2,
+                md: 4,
+                lg: 4,
+                xl: 6,
+                xxl: 3
+              }}
+                    dataSource={[{ title: "OAuth2.0 Standard", link: "https://oauth.net" }]}
+                    renderItem={item => (
+                      <List.Item>
+                        <a href={item.link} target={"_blank"}>
+                          <Text>{item.title}</Text>
+                        </a>
+                      </List.Item>
+                    )}
+              />
+            </Panel>
+            <Panel header="Databases" key="databases">
+              <List grid={{
+                gutter: 16,
+                xs: 1,
+                sm: 2,
+                md: 4,
+                lg: 4,
+                xl: 6,
+                xxl: 3
+              }}
+                    dataSource={[{ title: "TiDB", link: "https://pingcap.com" }, {
+                      title: "MySQL",
+                      link: "https://mysql.com"
+                    }, { title: "MongoDB", link: "https://mongodb.com" }, {
+                      title: "Google Cloud Firestore",
+                      link: "https://cloud.google.com/firestore"
+                    }, {
+                      title: "Google Cloud Datastore",
+                      link: "https://cloud.google.com/datastore"
+                    }, { title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/" }]}
                     renderItem={item => (
                       <List.Item>
                         <a href={item.link} target={"_blank"}>
