@@ -1,14 +1,14 @@
 import React from "react"
-import { Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Tooltip, Typography } from "antd"
+import { Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Collapse, Typography, List, Card } from "antd"
 import Page from "../components/Page"
-import { motion } from "framer-motion"
 import { ArrowDownOutlined } from "@ant-design/icons"
 import { GithubOutlined, InstagramOutlined, LinkedinOutlined } from "@ant-design/icons/lib"
-import Link from "next/link"
 
 const { Title, Text } = Typography
 
 const { Header, Footer, Sider, Content } = Layout
+
+const { Panel } = Collapse
 
 interface IIndexPageState {
 }
@@ -132,7 +132,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           <Title style={{
             fontFamily: "Metropolis"
           }}>
-            My experiences
+            My Technical Experiences
           </Title>
           <Timeline>
             <Timeline.Item>
@@ -169,6 +169,44 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontWeight: 500
               }} level={4}>
                 <Text keyboard>2019</Text>
+                Chief Technology Officer (React) at SST Inc</Title>
+              <Text>
+                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
+                assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
+                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
+              </Text>
+            </Timeline.Item>
+            <Timeline.Item>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                Software Engineer at Outside Technologies Private Limited</Title>
+              <Text>
+                At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
+                technologies</a> that is
+                in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
+                Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test
+                and deploy at greater efficiency.
+              </Text>
+            </Timeline.Item>
+          </Timeline>
+        </Content>
+        <Divider/>
+        <Content>
+          <Title style={{
+            fontFamily: "Metropolis"
+          }}>
+            My Volunteer Experiences
+          </Title>
+          <Timeline>
+            <Timeline.Item>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
                 Swift Accelerator Program (Volunteer)</Title>
               <Text>
                 After taking part in the Swift Accelerator Program, I volunteered to to help the subsequent cohorts and
@@ -193,36 +231,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2019</Text>
-                Chief Technology Officer (React) at SST Inc</Title>
-              <Text>
-                As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
-                assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
-                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
-              </Text>
+                <Text keyboard>2020</Text>
+                Swift Accelerator Program (Volunteer)</Title>
             </Timeline.Item>
-            <Timeline.Item>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                Software Engineer at Outside Technologies Private Limited</Title>
-              <Text>
-                At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
-                technologies</a> that is
-                in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
-                Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test
-                and deploy at greater efficiency.
-              </Text>
-            </Timeline.Item><Timeline.Item>
-            <Title style={{
-              fontFamily: "Inter",
-              fontWeight: 500
-            }} level={4}>
-              <Text keyboard>2020</Text>
-              Swift Accelerator Program (Volunteer)</Title>
-          </Timeline.Item>
           </Timeline>
         </Content>
         <Divider/>
@@ -254,7 +265,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 SST Open House App</Title>
               <Text>I also developed the Open House App for 2020. Due to the COVID-19 situation, the app was not
                 released. However, the source code will be used to build the 2021 Open House App.
-                Check out the code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a></Text>
+                Check out the code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a>.</Text>
             </div>
             <div>
               <Title style={{
@@ -270,6 +281,100 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             </div>
           </Space>
         </Content>
+        <Divider/>
+        <Content>
+          <Title style={{
+            fontFamily: "Metropolis"
+          }}>
+            My Achievements
+          </Title>
+          <Space direction={"vertical"} size={"large"}>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2019</Text>
+                IMDA Techblazer Awards (Student) - Silver</Title>
+              <Text>CodeCollab.io <a
+                href={"https://techblazerawards.sg/Past-Winners/2019-Winners/School-Of-Science-And-Technology-Singapore"}
+                target={"_blank"}>attained Silver</a> in the IMDA Techblazer Awards, Student Category. Techblazer Awards
+                (student) is the Singapore's highest accolade for tech innovation that recognizes innovative ideas with
+                commercialisation potential developed by students</Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2020</Text>
+                SST Inventive Minds Award</Title>
+            </div>
+          </Space>
+        </Content>
+        <Divider/>
+        <Content>
+          <Title style={{
+            fontFamily: "Metropolis"
+          }}>
+            My Knowledge and Skills
+          </Title>
+          <Collapse>
+            <Panel header="Languages" key="languages">
+              <List grid={{
+                gutter: 16,
+                xs: 1,
+                sm: 2,
+                md: 4,
+                lg: 4,
+                xl: 6,
+                xxl: 3
+              }}
+                    dataSource={[{ title: "Typescript", link: "https://www.typescriptlang.org" }, {
+                      title: "C#",
+                      link: "https://asp.net"
+                    }, { title: "Swift", link: "https://swift.org" }, {
+                      title: "Python",
+                      link: "https://python.org"
+                    }, { title: "Go", link: "https://golang.org" }, { title: "Rust", link: "https://rustlang.org" }]}
+                    renderItem={item => (
+                      <List.Item>
+                        <a href={item.link} target={"_blank"}>
+                          <Text>{item.title}</Text>
+                        </a>
+                      </List.Item>
+                    )}
+              />
+            </Panel>
+            <Panel header="Frameworks" key="frameworks">
+              <List grid={{
+                gutter: 16,
+                xs: 1,
+                sm: 2,
+                md: 4,
+                lg: 4,
+                xl: 6,
+                xxl: 3
+              }}
+                    dataSource={[{ title: "React", link: "https://reactjs.org" }, {
+                      title: "React Native",
+                      link: "https://reactnative.dev"
+                    }, { title: "NestJS", link: "https://nestjs.com" }, {
+                      title: "ASP.NET",
+                      link: "https://asp.net"
+                    }, { title: "Django", link: "https://djangoproject.com" }]}
+                    renderItem={item => (
+                      <List.Item>
+                        <a href={item.link} target={"_blank"}>
+                          <Text>{item.title}</Text>
+                        </a>
+                      </List.Item>
+                    )}
+              />
+            </Panel>
+          </Collapse>
+        </Content>
+        <Footer/>
       </Page>
     )
   }
