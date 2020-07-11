@@ -4,7 +4,7 @@ import Page from "../components/Page"
 import { ArrowDownOutlined } from "@ant-design/icons"
 import { GithubOutlined, InstagramOutlined, LinkedinOutlined } from "@ant-design/icons/lib"
 
-const { Title, Text } = Typography
+const { Title, Text, Link } = Typography
 
 const { Header, Footer, Sider, Content } = Layout
 
@@ -98,8 +98,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             Computing at School of Science and Technology, Singapore
           </Title>
           <Text>
-            I am currently studying at the School of Science and Technology, Singapore. The applied subject that I am
-            taking in SST is Computing.
+            I am currently a Secondary 4 student at SST.
           </Text>
           <Title style={{
             fontFamily: "Inter",
@@ -144,8 +143,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Co-Founded CodeCollab.io
               </Title>
               <Text>
-                Together with Carl, my schoolmate at SST, we created <a href={"https://codecollab.io"}
-                                                                        target={"_blank"}>CodeCollab</a>, a
+                Together with Carl, my schoolmate, we created <a href={"https://codecollab.io"}
+                                                                 target={"_blank"}>CodeCollab</a>, a
                 collaborative code
                 editor that allows anyone
                 to compile, collaborate and create code anywhere, at any time.
@@ -160,7 +159,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Chief Technology Officer (iOS) at SST Inc</Title>
               <Text>
                 As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
-                also maintained SST Inc's iOS resources, such as deploying apps to the app store.
+                also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as deploying apps to the app store.
               </Text>
             </Timeline.Item>
             <Timeline.Item>
@@ -209,7 +208,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Swift Accelerator Program (Volunteer)</Title>
               <Text>
-                After taking part in the Swift Accelerator Program, I volunteered to to help the subsequent cohorts and
+                After taking part in the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator Program</a>, I volunteered to to help the subsequent cohorts and
                 provided technical assistance.
               </Text>
             </Timeline.Item>
@@ -221,7 +220,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Hackomania (Volunteer)</Title>
               <Text>
-                I volunteered at Hackomania 2019, an annual 24-hour hackathon by Geekshacking Community that aims to
+                I volunteered at <a href={"https://hackomania.geekshacking.com"} target={"_blank"}>Hackomania</a> 2019, an annual 24-hour hackathon by Geekshacking Community that aims to
                 bring together tech enthusiasts, students and working professionals from various backgrounds to tackle
                 real-world issues with tech solutions. At the hackathon, I helped with event logistics.
               </Text>
@@ -263,9 +262,10 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2020/2021</Text>
                 SST Open House App</Title>
-              <Text>I also developed the Open House App for 2020. Due to the COVID-19 situation, the app was not
-                released. However, the source code will be used to build the 2021 Open House App.
-                Check out the code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a>.</Text>
+              <Text>
+                <a href={"https://github.com/sst-inc/openhouse2020"}><Text keyboard>Open Source</Text></a>
+                I also developed the <a href={"https://github.com/sst-inc/openhouse2020"}>Open House App</a> for 2020. Due to the COVID-19 situation, the app was not
+                released. However, the source code will be used to build the 2021 Open House App.</Text>
             </div>
             <div>
               <Title style={{
