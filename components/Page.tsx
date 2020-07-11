@@ -4,10 +4,8 @@ import { Layout, Row, Col, Space } from "antd"
 export default function Page(props: { children?: React.ReactNode, style?: CSSProperties }) {
   return (
     <Layout style={{
-      height: "100vh",
       width: "100vw",
       paddingTop: '5rem',
-      overflow: 'scroll',
       ...props.style
     }}>
         <Row>

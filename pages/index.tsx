@@ -57,8 +57,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   fontFamily: "Inter"
                 }} level={4}>I'm a student from the School of Science and Technology, Singapore</Title>
                 <div style={{
-                  display: 'flex',
-                  flexDirection: 'column'
+                  display: "flex",
+                  flexDirection: "column"
                 }}>
                   <Text style={{
                     fontFamily: "Inter"
@@ -98,7 +98,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             Computing at School of Science and Technology, Singapore
           </Title>
           <Text>
-            I am currently studying at the School of Science and Technology, Singapore. The applied subject that I am taking in SST is Computing.
+            I am currently studying at the School of Science and Technology, Singapore. The applied subject that I am
+            taking in SST is Computing.
           </Text>
           <Title style={{
             fontFamily: "Inter",
@@ -121,7 +122,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Text>
             As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-            Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the Summit to IMDA
+            Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the Summit
+            to IMDA
             Assistant Chief Executive of Planning, Ms Koh Li-Na.
           </Text>
         </Content>
@@ -143,7 +145,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Title>
               <Text>
                 Together with Carl, my schoolmate at SST, we created <a href={"https://codecollab.io"}
-                                                                target={"_blank"}>CodeCollab</a>, a collaborative code
+                                                                        target={"_blank"}>CodeCollab</a>, a
+                collaborative code
                 editor that allows anyone
                 to compile, collaborate and create code anywhere, at any time.
               </Text>
@@ -206,7 +209,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Software Engineer at Outside Technologies Private Limited</Title>
               <Text>
-                At Outside, I worked on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web app</a> that is
+                At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
+                technologies</a> that is
                 in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
                 Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test
                 and deploy at greater efficiency.
@@ -239,8 +243,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text>For SST's annual open house, I developed the <a
                 href={"https://apps.apple.com/sg/app/sst-open-house-2019/id1459040697"} target={"_blank"}>Open House
                 App</a> to help users learn more about the
-                events they can take part in during the event, and also help them plan their time at the school.
-                Unfortunately, the source code for the app has been deleted. It was previously open sourced. </Text>
+                events they can take part in during the event, and also help them plan their time at the school.</Text>
             </div>
             <div>
               <Title style={{
@@ -249,8 +252,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2020/2021</Text>
                 SST Open House App</Title>
-              <Text>I also developed the Open House App for 2020, however, due to the COVID-19 situation, the app was
-                never completed and released. However, the source code will be used to build the 2021 Open House App.
+              <Text>I also developed the Open House App for 2020. Due to the COVID-19 situation, the app was not
+                released. However, the source code will be used to build the 2021 Open House App.
                 Check out the code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a></Text>
             </div>
             <div>
@@ -260,7 +263,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2018-2020</Text>
                 TTSH PACE</Title>
-              <Text>I helped to develop the TTSH PACE app, a collaboration between SST and TTSH. The app aims to help
+              <Text>I helped to develop the TTSH PACE app. The project, a collaboration between Tan Tock Seng Hospital
+                and SST, aims to help
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
                 utilities like calculators for common formulas. However, due to unforeseen circumstances, the project
                 was unfortunately abandoned.</Text>
