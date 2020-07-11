@@ -56,6 +56,17 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Title style={{
                   fontFamily: "Inter"
                 }} level={4}>I'm a student from the School of Science and Technology, Singapore</Title>
+                <div style={{
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}>
+                  <Text style={{
+                    fontFamily: "Inter"
+                  }}>Co-Founder of <a href={"https://codecollab.io"} target={"_blank"}>CodeCollab.io</a></Text>
+                  <Text style={{
+                    fontFamily: "Inter"
+                  }}>Software Engineer at <a href={"https://outsideapp.co"} target={"_blank"}>Outside</a></Text>
+                </div>
               </Space>
             </Col>
             <Col xs={0} sm={0} md={0} lg={6} xl={6}>
@@ -77,6 +88,48 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           <Title style={{
             fontFamily: "Metropolis"
           }}>
+            My Education
+          </Title>
+          <Title style={{
+            fontFamily: "Inter",
+            fontWeight: 500
+          }} level={4}>
+            <Text keyboard>2017-2020</Text>
+            Computing at School of Science and Technology, Singapore
+          </Title>
+          <Text>
+            I am currently studying at the School of Science and Technology, Singapore. The applied subject that I am taking in SST is Computing.
+          </Text>
+          <Title style={{
+            fontFamily: "Inter",
+            fontWeight: 500
+          }} level={4}>
+            <Text keyboard>2018</Text>
+            Swift Accelerator Program
+          </Title>
+          <Text>
+            I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
+            Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
+            and also marketing and design principles.
+          </Text>
+          <Title style={{
+            fontFamily: "Inter",
+            fontWeight: 500
+          }} level={4}>
+            <Text keyboard>2018</Text>
+            Swift Innovators' Summit
+          </Title>
+          <Text>
+            As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
+            Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the Summit to IMDA
+            Assistant Chief Executive of Planning, Ms Koh Li-Na.
+          </Text>
+        </Content>
+        <Divider/>
+        <Content>
+          <Title style={{
+            fontFamily: "Metropolis"
+          }}>
             My experiences
           </Title>
           <Timeline>
@@ -85,42 +138,14 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2017-Present</Text>
-                Co-Founder & CTO at CodeCollab.io
+                <Text keyboard>2017</Text>
+                Co-Founded CodeCollab.io
               </Title>
               <Text>
-                Together with Carl, my classmate, we created <a href={"https://codecollab.io"}
-                                                                target={"_blank"}>CodeCollab</a>. A collaborative code
+                Together with Carl, my schoolmate at SST, we created <a href={"https://codecollab.io"}
+                                                                target={"_blank"}>CodeCollab</a>, a collaborative code
                 editor that allows anyone
                 to compile, collaborate and create code anywhere, at any time.
-              </Text>
-            </Timeline.Item>
-            <Timeline.Item>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Swift Accelerator Program (Participant)
-              </Title>
-              <Text>
-                I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
-                and also marketing and design principles.
-              </Text>
-            </Timeline.Item>
-            <Timeline.Item>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Swift Innovators' Summit
-              </Title>
-              <Text>
-                As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>, Carl and I created an app, Parkgoer, and presented it at the Summit to IMDA
-                Assistant Chief Executive of Planning, Ms Koh Li-Na.
               </Text>
             </Timeline.Item>
             <Timeline.Item>
@@ -140,7 +165,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2019-2020</Text>
+                <Text keyboard>2019</Text>
                 Swift Accelerator Program (Volunteer)</Title>
               <Text>
                 After taking part in the Swift Accelerator Program, I volunteered to to help the subsequent cohorts and
@@ -178,7 +203,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2019-Present</Text>
+                <Text keyboard>2019</Text>
                 Software Engineer at Outside Technologies Private Limited</Title>
               <Text>
                 At Outside, I worked on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web app</a> that is
@@ -186,7 +211,14 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Cloud. While developing the web app, I also implemented CI/CD into the workflow to help the team test
                 and deploy at greater efficiency.
               </Text>
-            </Timeline.Item>
+            </Timeline.Item><Timeline.Item>
+            <Title style={{
+              fontFamily: "Inter",
+              fontWeight: 500
+            }} level={4}>
+              <Text keyboard>2020</Text>
+              Swift Accelerator Program (Volunteer)</Title>
+          </Timeline.Item>
           </Timeline>
         </Content>
         <Divider/>
@@ -218,9 +250,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2020/2021</Text>
                 SST Open House App</Title>
               <Text>I also developed the Open House App for 2020, however, due to the COVID-19 situation, the app was
-                never completed and released. The source code will however be used to build the 2021 Open House App.
-                Check out the
-                code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a></Text>
+                never completed and released. However, the source code will be used to build the 2021 Open House App.
+                Check out the code <a href={"https://github.com/sst-inc/openhouse2020"}>here</a></Text>
             </div>
             <div>
               <Title style={{
@@ -231,8 +262,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 TTSH PACE</Title>
               <Text>I helped to develop the TTSH PACE app, a collaboration between SST and TTSH. The app aims to help
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
-                utilities like calculators for common formulas. However, due to unforeseen circumstances, the project was
-                unfortunately abandoned.</Text>
+                utilities like calculators for common formulas. However, due to unforeseen circumstances, the project
+                was unfortunately abandoned.</Text>
             </div>
           </Space>
         </Content>
