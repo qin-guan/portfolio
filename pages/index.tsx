@@ -266,8 +266,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text>I helped to develop the TTSH PACE app. The project, a collaboration between Tan Tock Seng Hospital
                 and SST, aims to help
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
-                utilities like calculators for common formulas. However, due to unforeseen circumstances, the project
-                was unfortunately abandoned.</Text>
+                utilities like calculators for common formulas.</Text>
             </div>
           </Space>
         </Content>
