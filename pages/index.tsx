@@ -152,7 +152,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Accelerator Program</a>, my schoolmate, Carl, and I created an app, Parkgoer, and presented it at the
                 Summit
                 to IMDA
-                Assistant Chief Executive of Planning, Ms Koh Li-Na.
+                Assistant Chief Executive of Planning, Ms Koh Li-Na. Parkgoer is an app to help children find parks and
+                recreational facilities around Singapore.
               </Text>
             </div>
           </Space>
@@ -196,7 +197,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }}>
                 As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
                 also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as
-                deploying apps to the app store.
+                deploying apps to the app store. SST Inc is SST's ICT Talent Development Program.
               </Text>
             </div>
             <div>
