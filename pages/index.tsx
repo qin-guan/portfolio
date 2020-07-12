@@ -223,20 +223,20 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Software Engineer at Outside Technologies Private Limited
                 <Text keyboard>Current</Text>
               </Title>
-              <Text style={{
-                fontFamily: "Inter"
-              }}>
-                At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
-                technologies</a> that is
-                in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
-                Cloud. While working, I also implemented CI/CD into the workflow to help the team test
-                and deploy at greater efficiency.
-              </Text>
-              <div>
-                <Link href={"/outside"}>
-                  <Text style={{cursor: 'pointer'}} keyboard>Find out more about what I do at Outside!</Text>
-                </Link>
-              </div>
+              <Space direction={"vertical"}>
+                <Text style={{
+                  fontFamily: "Inter"
+                }}>
+                  At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
+                  technologies</a> that is
+                  in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
+                  Cloud. While working, I also implemented CI/CD into the workflow to help the team test
+                  and deploy at greater efficiency.
+                </Text>
+                <div>
+                  <Button style={{cursor: 'pointer'}} href={"/outside"}>Find out more about what I do at Outside!</Button>
+                </div>
+              </Space>
             </div>
           </Space>
         </Content>
@@ -524,7 +524,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   }}>OAuth2.0 Standard</Title></a>
                   <Text style={{
                     fontFamily: 'Inter'
-                  }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented an
+                  }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented a
                     Resource Owner Password Grant workflow.</Text>
                 </div>
               </Space>
@@ -560,7 +560,12 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             </Panel>
           </Collapse>
         </Content>
-        <Footer/>
+        <Divider/>
+        <Footer>
+          <Text>2020 Qin Guan <a href={"https://github.com/qin-guan/portfolio"} target={"_blank"}>
+            <Text code>View source code for this site</Text>
+          </a></Text>
+        </Footer>
       </Page>
     )
   }

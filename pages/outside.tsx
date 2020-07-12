@@ -1,4 +1,5 @@
 import React from "react";
+import Page from "../components/Page";
 
 interface IOutsidePageState {
 }
@@ -15,7 +16,7 @@ class OutsidePage extends React.Component<IOutsidePageProps, IOutsidePageState> 
 
   render() {
     return (
-        <div />
+        <Page/>
     );
   }
 }
