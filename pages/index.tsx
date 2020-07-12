@@ -116,7 +116,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text style={{
                 fontFamily: "Inter"
               }}>
-                At the school of Science and Technology, we are able to choose an O-Level Applied Subject to develop our
+                At the School of Science and Technology, we are able to choose an O-Level Applied Subject to develop our
                 interests in a specific field. For myself, I chose Computing+ as my Applied Subject, which allows me to
                 develop my computational thinking skills, and also further my knowledge in the Python language.
               </Text>
@@ -149,7 +149,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter"
               }}>
                 As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the
+                Accelerator Program</a>, my schoolmate, Carl, and I created an app, Parkgoer, and presented it at the
                 Summit
                 to IMDA
                 Assistant Chief Executive of Planning, Ms Koh Li-Na.
@@ -177,7 +177,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text style={{
                 fontFamily: "Inter"
               }}>
-                Together with Carl, my schoolmate, we created <a href={"https://codecollab.io"}
+                Together with my schoolmate, Carl, we created <a href={"https://codecollab.io"}
                                                                  target={"_blank"}>CodeCollab</a>, a
                 collaborative code
                 editor that allows anyone
