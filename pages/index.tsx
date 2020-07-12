@@ -126,6 +126,24 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
+                <Text keyboard>2017-2020</Text>
+                SST Inc Ethical Hacking
+              </Title>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
+                I took part in the Ethical Hacking course offered by SST Inc, SST's ICT Talent Development Program.
+                During the ethical hacking course, we learnt things such as how computers work, and how cyber attacks
+                take place.
+                At the end of the course, we built a chatroom with MySQL, PHP and Apache, and tried to bring down each
+                other's chatroom.
+              </Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
                 <Text keyboard>2018</Text>
                 Swift Accelerator Program
               </Title>
@@ -197,7 +215,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }}>
                 As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
                 also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as
-                deploying apps to the app store. SST Inc is SST's ICT Talent Development Program.
+                deploying apps to the app store.
               </Text>
             </div>
             <div>
