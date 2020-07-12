@@ -262,8 +262,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }}>
                 After taking part in the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator
                 Program</a>,
-                I volunteered to to help the subsequent cohorts and
-                provided technical assistance.
+                I volunteered to help the subsequent cohorts and
+                provide technical assistance.
               </Text>
             </div>
             <div>
