@@ -126,7 +126,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
-                <Text keyboard>2017-2020</Text>
+                <Text keyboard>2019</Text>
                 SST Inc Ethical Hacking
               </Title>
               <Text style={{
