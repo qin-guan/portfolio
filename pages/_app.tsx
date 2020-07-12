@@ -1,4 +1,4 @@
-import 'antd/dist/antd.min.css'
+import 'antd/dist/antd.css'
 import "../components/Fonts.css"
 import "../components/A.css"
 

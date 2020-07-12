@@ -1,14 +1,14 @@
 import React from "react"
-import { Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Collapse, Typography, List, Card } from "antd"
+import {Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Collapse, Typography, List, Card} from "antd"
 import Page from "../components/Page"
-import { ArrowDownOutlined } from "@ant-design/icons"
-import { GithubOutlined, InstagramOutlined, LinkedinOutlined } from "@ant-design/icons/lib"
+import {ArrowDownOutlined} from "@ant-design/icons"
+import {GithubOutlined, InstagramOutlined, LinkedinOutlined, GitlabOutlined} from "@ant-design/icons/lib"
 
-const { Title, Text, Link } = Typography
+const {Title, Text, Link} = Typography
 
-const { Header, Footer, Sider, Content } = Layout
+const {Header, Footer, Sider, Content} = Layout
 
-const { Panel } = Collapse
+const {Panel} = Collapse
 
 interface IIndexPageState {
 }
@@ -39,6 +39,11 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Space>
                   <a href={"https://github.com/qin-guan"} target={"_blank"}>
                     <GithubOutlined style={{
+                      fontSize: "2rem"
+                    }}/>
+                  </a>
+                  <a href={"https://gitlab.com/qinguan2004"} target={"_blank"}>
+                    <GitlabOutlined style={{
                       fontSize: "2rem"
                     }}/>
                   </a>
@@ -90,41 +95,52 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Education
           </Title>
-          <Title style={{
-            fontFamily: "Inter",
-            fontWeight: 500
-          }} level={4}>
-            <Text keyboard>2017-2020</Text>
-            Computing at School of Science and Technology, Singapore
-          </Title>
-          <Text>
-            I am currently a Secondary 4 student at SST.
-          </Text>
-          <Title style={{
-            fontFamily: "Inter",
-            fontWeight: 500
-          }} level={4}>
-            <Text keyboard>2018</Text>
-            Swift Accelerator Program
-          </Title>
-          <Text>
-            I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-            Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
-            and also marketing and design principles.
-          </Text>
-          <Title style={{
-            fontFamily: "Inter",
-            fontWeight: 500
-          }} level={4}>
-            <Text keyboard>2018</Text>
-            Swift Innovators' Summit
-          </Title>
-          <Text>
-            As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-            Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the Summit
-            to IMDA
-            Assistant Chief Executive of Planning, Ms Koh Li-Na.
-          </Text>
+          <Space direction={"vertical"} size={"large"}>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2017-2020</Text>
+                School of Science and Technology, Singapore
+              </Title>
+              <Text>
+                At the school of Science and Technology, we are able to choose an O-Level Applied Subject to develop our
+                interests in a specific field. For myself, I chose Computing+ as my Applied Subject, which allows me to
+                develop my computational thinking skills, and also further my knowledge in the Python language.
+              </Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2018</Text>
+                Swift Accelerator Program
+              </Title>
+              <Text>
+                I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
+                Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
+                and also marketing and design principles.
+              </Text>
+            </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2018</Text>
+                Swift Innovators' Summit
+              </Title>
+              <Text>
+                As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
+                Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the
+                Summit
+                to IMDA
+                Assistant Chief Executive of Planning, Ms Koh Li-Na.
+              </Text>
+            </div>
+          </Space>
         </Content>
         <Divider/>
         <Content>
@@ -133,14 +149,15 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Technical Experiences
           </Title>
-          <Timeline>
-            <Timeline.Item>
+          <Space direction={"vertical"} size={"large"}>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
                 <Text keyboard>2017</Text>
                 Co-Founded CodeCollab.io
+                <Text keyboard>Current</Text>
               </Title>
               <Text>
                 Together with Carl, my schoolmate, we created <a href={"https://codecollab.io"}
@@ -149,8 +166,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 editor that allows anyone
                 to compile, collaborate and create code anywhere, at any time.
               </Text>
-            </Timeline.Item>
-            <Timeline.Item>
+            </div>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
@@ -159,10 +176,11 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Chief Technology Officer (iOS) at SST Inc</Title>
               <Text>
                 As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
-                also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as deploying apps to the app store.
+                also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as
+                deploying apps to the app store.
               </Text>
-            </Timeline.Item>
-            <Timeline.Item>
+            </div>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
@@ -174,14 +192,16 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
                 covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
               </Text>
-            </Timeline.Item>
-            <Timeline.Item>
+            </div>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
                 <Text keyboard>2019</Text>
-                Software Engineer at Outside Technologies Private Limited</Title>
+                Software Engineer at Outside Technologies Private Limited
+                <Text keyboard>Current</Text>
+              </Title>
               <Text>
                 At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
                 technologies</a> that is
@@ -189,8 +209,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Cloud. While working, I also implemented CI/CD into the workflow to help the team test
                 and deploy at greater efficiency.
               </Text>
-            </Timeline.Item>
-          </Timeline>
+            </div>
+          </Space>
         </Content>
         <Divider/>
         <Content>
@@ -199,20 +219,23 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Volunteer Experiences
           </Title>
-          <Timeline>
-            <Timeline.Item>
+          <Space direction={"vertical"} size={"large"}>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
               }} level={4}>
                 <Text keyboard>2019</Text>
+                <Text keyboard>2020</Text>
                 Swift Accelerator Program (Volunteer)</Title>
               <Text>
-                After taking part in the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator Program</a>, I volunteered to to help the subsequent cohorts and
+                After taking part in the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator
+                Program</a>,
+                I volunteered to to help the subsequent cohorts and
                 provided technical assistance.
               </Text>
-            </Timeline.Item>
-            <Timeline.Item>
+            </div>
+            <div>
               <Title style={{
                 fontFamily: "Inter",
                 fontWeight: 500
@@ -220,20 +243,14 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 Hackomania (Volunteer)</Title>
               <Text>
-                I volunteered at <a href={"https://hackomania.geekshacking.com"} target={"_blank"}>Hackomania</a> 2019, an annual 24-hour hackathon by Geekshacking Community that aims to
+                I volunteered at <a href={"https://hackomania.geekshacking.com"} target={"_blank"}>Hackomania</a> 2019,
+                an
+                annual 24-hour hackathon by Geekshacking Community that aims to
                 bring together tech enthusiasts, students and working professionals from various backgrounds to tackle
                 real-world issues with tech solutions. At the hackathon, I helped with event logistics.
               </Text>
-            </Timeline.Item>
-            <Timeline.Item>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2020</Text>
-                Swift Accelerator Program (Volunteer)</Title>
-            </Timeline.Item>
-          </Timeline>
+            </div>
+          </Space>
         </Content>
         <Divider/>
         <Content>
@@ -249,23 +266,16 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontWeight: 500
               }} level={4}>
                 <Text keyboard>2019</Text>
+                <Text keyboard>2021</Text>
                 SST Open House App</Title>
               <Text>For SST's annual open house, I developed the <a
                 href={"https://apps.apple.com/sg/app/sst-open-house-2019/id1459040697"} target={"_blank"}>Open House
                 App</a> to help users learn more about the
-                events they can take part in during the event, and also help them plan their time at the school.</Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2020/2021</Text>
-                SST Open House App</Title>
-              <Text>
-                <a href={"https://github.com/sst-inc/openhouse2020"}><Text keyboard>Open Source</Text></a>
-                I also developed the <a href={"https://github.com/sst-inc/openhouse2020"}>Open House App</a> for 2020. Due to the COVID-19 situation, the app was not
-                released. However, the source code will be used to build the 2021 Open House App.</Text>
+                events they can take part in during the event, and also help them plan their time at the school.<br/>
+                I also developed the <a href={"https://github.com/sst-inc/openhouse2020"}>Open House App</a> for 2020.
+                Due to the COVID-19 situation, the app was not
+                released. However, the source code will be used to build the 2021 Open House App.
+              </Text>
             </div>
             <div>
               <Title style={{
@@ -330,13 +340,13 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 xl: 6,
                 xxl: 3
               }}
-                    dataSource={[{ title: "Typescript", link: "https://www.typescriptlang.org" }, {
+                    dataSource={[{title: "Typescript", link: "https://www.typescriptlang.org"}, {
                       title: "C#",
                       link: "https://asp.net"
-                    }, { title: "Swift", link: "https://swift.org" }, {
+                    }, {title: "Swift", link: "https://swift.org"}, {
                       title: "Python",
                       link: "https://python.org"
-                    }, { title: "Go", link: "https://golang.org" }, { title: "Rust", link: "https://rustlang.org" }]}
+                    }, {title: "Go", link: "https://golang.org"}, {title: "Rust", link: "https://rustlang.org"}]}
                     renderItem={item => (
                       <List.Item>
                         <a href={item.link} target={"_blank"}>
@@ -356,13 +366,13 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 xl: 6,
                 xxl: 3
               }}
-                    dataSource={[{ title: "React", link: "https://reactjs.org" }, {
+                    dataSource={[{title: "React", link: "https://reactjs.org"}, {
                       title: "React Native",
                       link: "https://reactnative.dev"
-                    }, { title: "NestJS", link: "https://nestjs.com" }, {
+                    }, {title: "NestJS", link: "https://nestjs.com"}, {
                       title: "ASP.NET",
                       link: "https://asp.net"
-                    }, { title: "Django", link: "https://djangoproject.com" }]}
+                    }, {title: "Django", link: "https://djangoproject.com"}]}
                     renderItem={item => (
                       <List.Item>
                         <a href={item.link} target={"_blank"}>
@@ -382,16 +392,16 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 xl: 6,
                 xxl: 3
               }}
-                    dataSource={[{ title: "Azure DevOps (Agile)", link: "https://dev.azure.com" }, {
+                    dataSource={[{title: "Azure DevOps (Agile)", link: "https://dev.azure.com"}, {
                       title: "Google Cloud Platform",
                       link: "https://cloud.google.com"
-                    }, { title: "Azure", link: "https://azure.com" }, {
+                    }, {title: "Azure", link: "https://azure.com"}, {
                       title: "Tencent Cloud",
                       link: "https://intl.cloud.tencent.com"
-                    }, { title: "Github Actions", link: "https://github.com" }, {
+                    }, {title: "Github Actions", link: "https://github.com"}, {
                       title: "Teamcity",
                       link: "https://jetbrains.com/teamcity"
-                    }, { title: "Kubernetes", link: "https://k8s.io" }, {
+                    }, {title: "Kubernetes", link: "https://k8s.io"}, {
                       title: "Docker",
                       link: "https://docker.com"
                     }]}
@@ -414,7 +424,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 xl: 6,
                 xxl: 3
               }}
-                    dataSource={[{ title: "OAuth2.0 Standard", link: "https://oauth.net" }]}
+                    dataSource={[{title: "OAuth2.0 Standard", link: "https://oauth.net"}]}
                     renderItem={item => (
                       <List.Item>
                         <a href={item.link} target={"_blank"}>
@@ -434,16 +444,16 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 xl: 6,
                 xxl: 3
               }}
-                    dataSource={[{ title: "TiDB", link: "https://pingcap.com" }, {
+                    dataSource={[{title: "TiDB", link: "https://pingcap.com"}, {
                       title: "MySQL",
                       link: "https://mysql.com"
-                    }, { title: "MongoDB", link: "https://mongodb.com" }, {
+                    }, {title: "MongoDB", link: "https://mongodb.com"}, {
                       title: "Google Cloud Firestore",
                       link: "https://cloud.google.com/firestore"
                     }, {
                       title: "Google Cloud Datastore",
                       link: "https://cloud.google.com/datastore"
-                    }, { title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/" }]}
+                    }, {title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/"}]}
                     renderItem={item => (
                       <List.Item>
                         <a href={item.link} target={"_blank"}>
