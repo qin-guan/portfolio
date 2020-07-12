@@ -211,7 +211,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }}>
                 As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
                 assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
-                covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
+                covers content ranging from the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
               </Text>
             </div>
             <div>
