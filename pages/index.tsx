@@ -174,6 +174,20 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 recreational facilities around Singapore.
               </Text>
             </div>
+            <div>
+              <Title style={{
+                fontFamily: "Inter",
+                fontWeight: 500
+              }} level={4}>
+                <Text keyboard>2018</Text>
+                Ngee Ann Polytechnic Entrepreneurship First Steps (EFS)
+              </Title>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
+                Through the EFS course, I learnt more about starting a business and and coming up with business ideas.
+              </Text>
+            </div>
           </Space>
         </Content>
         <Divider/>
