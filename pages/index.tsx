@@ -234,7 +234,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   and deploy at greater efficiency.
                 </Text>
                 <div>
-                  <Button style={{cursor: 'pointer'}} href={"/outside"}>Find out more about what I do at Outside!</Button>
+                  <Button style={{cursor: 'pointer'}} href={"/outside"}>Find out more about what I do at
+                    Outside!</Button>
                 </div>
               </Space>
             </div>
@@ -495,7 +496,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{
+                      dataSource={[{title: "Rushstack", link: "https://rushstack.io"}, {
                         title: "Google Cloud Platform",
                         link: "https://cloud.google.com"
                       }, {title: "Azure", link: "https://azure.com"}, {
