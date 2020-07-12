@@ -13,7 +13,9 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "framer-motion": "^1.11.1",
-    "@ant-design/icons": "^4.2.1"
+    "@ant-design/icons": "^4.2.1",
+    "react-scroll": "^1.8.0",
+    "logrocket": "^1.0.9"
   },
   "devDependencies": {
     "typescript": "^3.9.6",

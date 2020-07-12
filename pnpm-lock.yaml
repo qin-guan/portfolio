@@ -2,9 +2,11 @@ dependencies:
   '@ant-design/icons': 4.2.1_react@16.13.1
   antd: 4.4.1_react-dom@16.13.1+react@16.13.1
   framer-motion: 1.11.1_react-dom@16.13.1+react@16.13.1
+  logrocket: 1.0.9
   next: 9.4.4_0ac8039be390c97a358112ea868cf3dd
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
+  react-scroll: 1.8.0_react-dom@16.13.1+react@16.13.1
 devDependencies:
   '@types/node': 14.0.20
   '@types/react': 16.9.41
@@ -3665,6 +3667,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-7dFMgk4sycHgsKG0K7UhBRakJDg=
+  /lodash.throttle/4.1.1:
+    dev: false
+    resolution:
+      integrity: sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
   /lodash.uniq/4.5.0:
     dev: false
     resolution:
@@ -3673,6 +3679,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
+  /logrocket/1.0.9:
+    dev: false
+    resolution:
+      integrity: sha512-dsZh4zPRtZlPqmI3n4Sgkh5DeWo+rRh4NZhRm6BH9F3Jfv1WFDutISr1a5bQJb9rITvBbRgw3zTVeWjU71qyBg==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -5339,6 +5349,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+  /react-scroll/1.8.0_react-dom@16.13.1+react@16.13.1:
+    dependencies:
+      lodash.throttle: 4.1.1
+      prop-types: 15.7.2
+      react: 16.13.1
+      react-dom: 16.13.1_react@16.13.1
+    dev: false
+    peerDependencies:
+      react: ^15.5.4 || ^16.0.0
+      react-dom: ^15.5.4 || ^16.0.0
+    resolution:
+      integrity: sha512-oZfBXPhcxYPR8elI9tC3ORT6+iqiPPJWslsdR9intbNI5PVSa4XoAfC0I/cB3zk5lxQ/NSexCnT+8RqJL8mSZQ==
   /react/16.13.1:
     dependencies:
       loose-envify: 1.4.0
@@ -6486,7 +6508,9 @@ specifiers:
   '@types/react': ^16.9.41
   antd: ^4.4.1
   framer-motion: ^1.11.1
+  logrocket: ^1.0.9
   next: 9.4.4
   react: 16.13.1
   react-dom: 16.13.1
+  react-scroll: ^1.8.0
   typescript: ^3.9.6

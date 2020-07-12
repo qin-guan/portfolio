@@ -4,9 +4,13 @@ import Page from "../components/Page"
 import {ArrowDownOutlined} from "@ant-design/icons"
 import {GithubOutlined, InstagramOutlined, LinkedinOutlined, GitlabOutlined} from "@ant-design/icons/lib"
 
-const {Title, Text, Link} = Typography
+import {scroller, Element} from 'react-scroll'
 
-const {Header, Footer, Sider, Content} = Layout
+import Link from 'next/link'
+
+const {Title, Text} = Typography
+
+const {Footer, Content} = Layout
 
 const {Panel} = Collapse
 
@@ -24,7 +28,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
 
   render() {
     return (
-      <Page>
+      <Page title={"Qin Guan"}>
         <Content style={{
           display: "flex",
           flexDirection: "column",
@@ -84,11 +88,16 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             display: "flex",
             justifyContent: "center"
           }}>
-            <Button size="large" type={"text"} shape="circle" icon={
+            <Button onClick={() => scroller.scrollTo("start", {
+              duration: 500,
+              delay: 0,
+              smooth: 'easeInOutQuart'
+            })} size="large" type={"text"} shape="circle" icon={
               <ArrowDownOutlined/>
             }/>
           </Footer>
         </Divider>
+        <Element name={"start"}/>
         <Content>
           <Title style={{
             fontFamily: "Metropolis"
@@ -104,7 +113,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2017-2020</Text>
                 School of Science and Technology, Singapore
               </Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 At the school of Science and Technology, we are able to choose an O-Level Applied Subject to develop our
                 interests in a specific field. For myself, I chose Computing+ as my Applied Subject, which allows me to
                 develop my computational thinking skills, and also further my knowledge in the Python language.
@@ -118,7 +129,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2018</Text>
                 Swift Accelerator Program
               </Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
                 Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
                 and also marketing and design principles.
@@ -132,7 +145,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2018</Text>
                 Swift Innovators' Summit
               </Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
                 Accelerator Program</a>, Carl, my schoolmate, and I created an app, Parkgoer, and presented it at the
                 Summit
@@ -159,7 +174,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Co-Founded CodeCollab.io
                 <Text keyboard>Current</Text>
               </Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 Together with Carl, my schoolmate, we created <a href={"https://codecollab.io"}
                                                                  target={"_blank"}>CodeCollab</a>, a
                 collaborative code
@@ -174,7 +191,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2018</Text>
                 Chief Technology Officer (iOS) at SST Inc</Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 As the Chief Technology Officer for iOS, I assisted students in developing their iOS applications. I
                 also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as
                 deploying apps to the app store.
@@ -187,7 +206,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2019</Text>
                 Chief Technology Officer (React) at SST Inc</Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 As the Chief Technology Officer for React, I promoted the use of React/React Native to students and also
                 assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
                 covers the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
@@ -202,13 +223,20 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Software Engineer at Outside Technologies Private Limited
                 <Text keyboard>Current</Text>
               </Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 At Outside, I work on our <a href={"https://web.outsideapp.co"} target={"_blank"}>web
                 technologies</a> that is
                 in use today. I also helped to manage our cloud platforms, namely Google Cloud Platform and Tencent
                 Cloud. While working, I also implemented CI/CD into the workflow to help the team test
                 and deploy at greater efficiency.
               </Text>
+              <div>
+                <Link href={"/outside"}>
+                  <Text style={{cursor: 'pointer'}} keyboard>Find out more about what I do at Outside!</Text>
+                </Link>
+              </div>
             </div>
           </Space>
         </Content>
@@ -228,7 +256,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 <Text keyboard>2020</Text>
                 Swift Accelerator Program (Volunteer)</Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 After taking part in the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift Accelerator
                 Program</a>,
                 I volunteered to to help the subsequent cohorts and
@@ -242,7 +272,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2019</Text>
                 Hackomania (Volunteer)</Title>
-              <Text>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>
                 I volunteered at <a href={"https://hackomania.geekshacking.com"} target={"_blank"}>Hackomania</a> 2019,
                 an
                 annual 24-hour hackathon by Geekshacking Community that aims to
@@ -268,13 +300,20 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Text keyboard>2019</Text>
                 <Text keyboard>2021</Text>
                 SST Open House App</Title>
-              <Text>For SST's annual open house, I developed the <a
-                href={"https://apps.apple.com/sg/app/sst-open-house-2019/id1459040697"} target={"_blank"}>Open House
-                App</a> to help users learn more about the
-                events they can take part in during the event, and also help them plan their time at the school.<br/>
-                I also developed the <a href={"https://github.com/sst-inc/openhouse2020"}>Open House App</a> for 2020.
+              <Text style={{
+                fontFamily: "Inter"
+              }}>For SST's annual open house, I developed the Open House
+                App to help users learn more about the
+                events they can take part in during the event, and also help them plan their time at the school. <a
+                  href={"https://apps.apple.com/sg/app/sst-open-house-2019/id1459040697"} target={"_blank"}><Text
+                  keyboard>Link to Open House App 2019</Text>
+                </a>
+                <br/>
+                I also developed the Open House App for 2020.
                 Due to the COVID-19 situation, the app was not
                 released. However, the source code will be used to build the 2021 Open House App.
+                <a href={"https://github.com/sst-inc/openhouse2020"} target={"_blank"}><Text keyboard>Link to Open House
+                  App 2021</Text></a>
               </Text>
             </div>
             <div>
@@ -284,7 +323,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2018-2020</Text>
                 TTSH PACE</Title>
-              <Text>I helped to develop the TTSH PACE app. The project, a collaboration between Tan Tock Seng Hospital
+              <Text style={{
+                fontFamily: "Inter"
+              }}>I helped to develop the TTSH PACE app. The project, a collaboration between Tan Tock Seng Hospital
                 and SST, aims to help
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
                 utilities like calculators for common formulas.</Text>
@@ -306,7 +347,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               }} level={4}>
                 <Text keyboard>2019</Text>
                 IMDA Techblazer Awards (Student) - Silver</Title>
-              <Text>CodeCollab.io <a
+              <Text style={{
+                fontFamily: "Inter"
+              }}>CodeCollab.io <a
                 href={"https://techblazerawards.sg/Past-Winners/2019-Winners/School-Of-Science-And-Technology-Singapore"}
                 target={"_blank"}>attained Silver</a> in the IMDA Techblazer Awards, Student Category. Techblazer Awards
                 (student) is the Singapore's highest accolade for tech innovation that recognizes innovative ideas with
@@ -331,108 +374,160 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Collapse>
             <Panel header="Languages" key="languages">
-              <List grid={{
-                gutter: 16,
-                xs: 1,
-                sm: 2,
-                md: 4,
-                lg: 4,
-                xl: 6,
-                xxl: 3
-              }}
-                    dataSource={[{title: "Typescript", link: "https://www.typescriptlang.org"}, {
-                      title: "C#",
-                      link: "https://asp.net"
-                    }, {title: "Swift", link: "https://swift.org"}, {
-                      title: "Python",
-                      link: "https://python.org"
-                    }, {title: "Go", link: "https://golang.org"}, {title: "Rust", link: "https://rustlang.org"}]}
-                    renderItem={item => (
-                      <List.Item>
-                        <a href={item.link} target={"_blank"}>
-                          <Text>{item.title}</Text>
-                        </a>
-                      </List.Item>
-                    )}
-              />
+              <Space direction={"vertical"} size={"large"}>
+                <div>
+                  <a href={"https://www.typescriptlang.org"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>Typescript</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>Majority of the projects I work on utilize Typescript. Some examples include the SST Open House
+                    apps, and my work at Outside.</Text>
+                </div>
+                <div>
+                  <a href={"https://asp.net"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>C#</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>I use C#, with ASP.NET Core on my personal projects, as it has a mature ecosystem. For example, I
+                    frequently experiment with OAuth2.0 on IdentityServer4.</Text>
+                </div>
+                <List grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3
+                }}
+                      dataSource={[{title: "Swift", link: "https://swift.org"}, {
+                        title: "Python",
+                        link: "https://python.org"
+                      }, {title: "Go", link: "https://golang.org"}, {title: "Rust", link: "https://rustlang.org"}]}
+                      renderItem={item => (
+                        <List.Item>
+                          <a href={item.link} target={"_blank"}>
+                            <Text>{item.title}</Text>
+                          </a>
+                        </List.Item>
+                      )}
+                />
+              </Space>
             </Panel>
             <Panel header="Frameworks" key="frameworks">
-              <List grid={{
-                gutter: 16,
-                xs: 1,
-                sm: 2,
-                md: 4,
-                lg: 4,
-                xl: 6,
-                xxl: 3
-              }}
-                    dataSource={[{title: "React", link: "https://reactjs.org"}, {
-                      title: "React Native",
-                      link: "https://reactnative.dev"
-                    }, {title: "NestJS", link: "https://nestjs.com"}, {
-                      title: "ASP.NET",
-                      link: "https://asp.net"
-                    }, {title: "Django", link: "https://djangoproject.com"}]}
-                    renderItem={item => (
-                      <List.Item>
-                        <a href={item.link} target={"_blank"}>
-                          <Text>{item.title}</Text>
-                        </a>
-                      </List.Item>
-                    )}
-              />
+              <Space direction={"vertical"} size={"large"}>
+                <div>
+                  <a href={"https://www.typescriptlang.org"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>React/React Native</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>React is my preferred framework for front end development. It has a rich ecosystem with a great
+                    support from the community. Knowing React also allows me to extend my skills into native app
+                    development, with the help of React Native. I have used React in projects like CodeCollab and
+                    Outside, and React Native in the Open House apps.</Text>
+                </div>
+                <List grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3
+                }}
+                      dataSource={[{title: "NestJS", link: "https://nestjs.com"}, {
+                        title: "ASP.NET",
+                        link: "https://asp.net"
+                      }, {title: "Django", link: "https://djangoproject.com"}]}
+                      renderItem={item => (
+                        <List.Item>
+                          <a href={item.link} target={"_blank"}>
+                            <Text>{item.title}</Text>
+                          </a>
+                        </List.Item>
+                      )}
+                />
+              </Space>
             </Panel>
             <Panel header="DevOps" key="DevOps">
-              <List grid={{
-                gutter: 16,
-                xs: 1,
-                sm: 2,
-                md: 4,
-                lg: 4,
-                xl: 6,
-                xxl: 3
-              }}
-                    dataSource={[{title: "Azure DevOps (Agile)", link: "https://dev.azure.com"}, {
-                      title: "Google Cloud Platform",
-                      link: "https://cloud.google.com"
-                    }, {title: "Azure", link: "https://azure.com"}, {
-                      title: "Tencent Cloud",
-                      link: "https://intl.cloud.tencent.com"
-                    }, {title: "Github Actions", link: "https://github.com"}, {
-                      title: "Teamcity",
-                      link: "https://jetbrains.com/teamcity"
-                    }, {title: "Kubernetes", link: "https://k8s.io"}, {
-                      title: "Docker",
-                      link: "https://docker.com"
-                    }]}
-                    renderItem={item => (
-                      <List.Item>
-                        <a href={item.link} target={"_blank"}>
-                          <Text>{item.title}</Text>
-                        </a>
-                      </List.Item>
-                    )}
-              />
+              <Space direction={"vertical"} size={"large"}>
+                <div>
+                  <a href={"https://jetbrains.com/teamcity"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>Teamcity</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>While working at Outside, I integrated CI/CD into the workflow with Teamcity, to help the team be
+                    able to test and deploy faster.</Text>
+                </div>
+                <div>
+                  <a href={"https://k8s.io"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>Kubernetes</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>I have experience in working with Kubernetes, through setting up distributed databases on Google
+                    Cloud Platform.</Text>
+                </div>
+                <div>
+                  <a href={"https://dev.azure.com"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>Azure DevOps (Agile)</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>I have worked with Agile Software Development while developing the TTSH PACE app.</Text>
+                </div>
+                <List grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3
+                }}
+                      dataSource={[{
+                        title: "Google Cloud Platform",
+                        link: "https://cloud.google.com"
+                      }, {title: "Azure", link: "https://azure.com"}, {
+                        title: "Tencent Cloud",
+                        link: "https://intl.cloud.tencent.com"
+                      }, {title: "Github Actions", link: "https://github.com"}, {
+                        title: "Docker",
+                        link: "https://docker.com"
+                      }]}
+                      renderItem={item => (
+                        <List.Item>
+                          <a href={item.link} target={"_blank"}>
+                            <Text>{item.title}</Text>
+                          </a>
+                        </List.Item>
+                      )}
+                />
+              </Space>
             </Panel>
             <Panel header="Security" key="security">
-              <List grid={{
-                gutter: 16,
-                xs: 1,
-                sm: 2,
-                md: 4,
-                lg: 4,
-                xl: 6,
-                xxl: 3
-              }}
-                    dataSource={[{title: "OAuth2.0 Standard", link: "https://oauth.net"}]}
-                    renderItem={item => (
-                      <List.Item>
-                        <a href={item.link} target={"_blank"}>
-                          <Text>{item.title}</Text>
-                        </a>
-                      </List.Item>
-                    )}
-              />
+              <Space direction={"vertical"} size={"large"}>
+                <div>
+                  <a href={"https://oauth.net"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>OAuth2.0 Standard</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented an
+                    Resource Owner Password Grant workflow.</Text>
+                </div>
+              </Space>
             </Panel>
             <Panel header="Databases" key="databases">
               <List grid={{
