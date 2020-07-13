@@ -388,7 +388,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 href={"https://techblazerawards.sg/Past-Winners/2019-Winners/School-Of-Science-And-Technology-Singapore"}
                 target={"_blank"}>attained Silver</a> in the IMDA Techblazer Awards, Student Category. Techblazer Awards
                 (student) is the Singapore's highest accolade for tech innovation that recognizes innovative ideas with
-                commercialisation potential developed by students</Text>
+                commercialisation potential developed by students.</Text>
             </div>
             <div>
               <Title style={{
