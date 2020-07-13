@@ -185,7 +185,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text style={{
                 fontFamily: "Inter"
               }}>
-                Through the EFS course, I learnt more about starting a business and and coming up with business ideas.
+                I took part in EFS to learn more about how businesses work and entrepreneurship. Through the course, I
+                was also able to gain more insight in starting and managing a business.
               </Text>
             </div>
           </Space>
