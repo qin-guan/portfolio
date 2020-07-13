@@ -151,7 +151,8 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter"
               }}>
                 I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>. The 9 months long program, by IMDA and Apple, covers skills such as building apps with Swift
+                Accelerator Program</a>. The 9 months long program, by IMDA and Apple, covers skills such as building
+                apps with Swift
                 and also marketing and design principles.
               </Text>
             </div>
@@ -166,8 +167,10 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               <Text style={{
                 fontFamily: "Inter"
               }}>
-                As part of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>, my schoolmate, Carl, and I created an app, Parkgoer, and presented it at the
+                The Swift Innovators Summit is a summit held at the end of the <a href={"https://swiftinsg.org"}
+                                                                                  target={"_blank"}>Swift Accelerator
+                Program</a> for students to
+                showcase their apps. My schoolmate, Carl, and I created an app, Parkgoer, and presented it at the
                 Summit
                 to IMDA
                 Assistant Chief Executive of Planning, Ms Koh Li-Na. Parkgoer is an app to help children find parks and
