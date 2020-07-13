@@ -151,7 +151,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 fontFamily: "Inter"
               }}>
                 I am part of the pioneering batch of the <a href={"https://swiftinsg.org"} target={"_blank"}>Swift
-                Accelerator Program</a>. The program, by IMDA and Apple, covers skills such as building apps with Swift
+                Accelerator Program</a>. The 9 months long program, by IMDA and Apple, covers skills such as building apps with Swift
                 and also marketing and design principles.
               </Text>
             </div>
