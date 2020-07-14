@@ -6,7 +6,10 @@ import {GithubOutlined, InstagramOutlined, LinkedinOutlined, GitlabOutlined} fro
 
 import {scroller, Element} from 'react-scroll'
 
-import Link from 'next/link'
+import Desktop from "../components/Desktop";
+import Mobile from "../components/Mobile";
+import Image from "../components/Image";
+import Flex from "../components/Flex";
 
 const {Title, Text} = Typography
 
@@ -37,6 +40,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           <Row>
             <Col xs={24} sm={24} md={24} lg={18} xl={18}>
               <Space direction="vertical" size={"large"}>
+                <Mobile>
+                  <Avatar size={150} src={"/me.jpg"}/>
+                </Mobile>
                 <Title style={{
                   fontFamily: "Metropolis"
                 }}>Hi, I'm Qin Guan</Title>
@@ -78,9 +84,9 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 </div>
               </Space>
             </Col>
-            <Col xs={0} sm={0} md={0} lg={6} xl={6}>
-              <Avatar size={150} src="/me.jpg"/>
-            </Col>
+            <Desktop>
+              <Avatar size={150} src={"/me.jpg"}/>
+            </Desktop>
           </Row>
         </Content>
         <Divider>
@@ -104,15 +110,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Education
           </Title>
-          <Space direction={"vertical"} size={"large"}>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2017-2020</Text>
-                School of Science and Technology, Singapore
-              </Title>
+          <Space direction={"vertical"} size={40}>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/sst.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2017-2020</Text>
+                  School of Science and Technology, Singapore
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -120,15 +129,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 interests in a specific field. For myself, I chose Computing+ as my Applied Subject, which allows me to
                 develop my computational thinking skills, and also further my knowledge in the Python language.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                SST Inc Ethical Hacking
-              </Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/inc.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  SST Inc Ethical Hacking
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -138,15 +150,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 At the end of the course, we built a chatroom with MySQL, PHP and Apache, and tried to bring down each
                 other's chatroom.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Swift Accelerator Program
-              </Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/sap.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2018</Text>
+                  Swift Accelerator Program
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -155,15 +170,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 apps with Swift
                 and also marketing and design principles.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Swift Innovators' Summit
-              </Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/sap.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2018</Text>
+                  Swift Innovators' Summit
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -176,22 +194,25 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 Assistant Chief Executive of Planning, Ms Koh Li-Na. Parkgoer is an app to help children find parks and
                 recreational facilities around Singapore.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Ngee Ann Polytechnic Entrepreneurship First Steps (EFS)
-              </Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/np.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2018</Text>
+                  Ngee Ann Polytechnic Entrepreneurship First Steps (EFS)
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
                 I took part in EFS to learn more about how businesses work and entrepreneurship. Through the course, I
                 was also able to gain more insight into starting and managing a business.
               </Text>
-            </div>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -201,16 +222,19 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Technical Experiences
           </Title>
-          <Space direction={"vertical"} size={"large"}>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2017</Text>
-                Co-Founded CodeCollab.io
-                <Text keyboard>Current</Text>
-              </Title>
+          <Space direction={"vertical"} size={40}>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/cc.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2017</Text>
+                  Co-Founded CodeCollab.io
+                  <Text keyboard>Current</Text>
+                </Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -220,14 +244,17 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 editor that allows anyone
                 to compile, collaborate and create code anywhere, at any time.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018</Text>
-                Chief Technology Officer (iOS) at SST Inc</Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/inc.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2018</Text>
+                  Chief Technology Officer (iOS) at SST Inc</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -235,14 +262,17 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 also maintained <a href={"https://sstinc.org"} target={"_blank"}>SST Inc</a>'s iOS resources, such as
                 deploying apps to the app store.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                Chief Technology Officer (React) at SST Inc</Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/inc.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  Chief Technology Officer (React) at SST Inc</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -250,16 +280,19 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 assisted them in getting started with the framework. I conducted a 5 day course on React Native, which
                 covers content ranging from the basics of ReactJS, to more advanced usages with Redux and RNFirestore.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                Software Engineer at Outside Technologies Private Limited
-                <Text keyboard>Current</Text>
-              </Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/out.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  Software Engineer at Outside Technologies Private Limited
+                  <Text keyboard>Current</Text>
+                </Title>
+              </Space>
               <Space direction={"vertical"}>
                 <Text style={{
                   fontFamily: "Inter"
@@ -280,7 +313,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   </Collapse>
                 </div>
               </Space>
-            </div>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -290,15 +323,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Volunteer Experiences
           </Title>
-          <Space direction={"vertical"} size={"large"}>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                <Text keyboard>2020</Text>
-                Swift Accelerator Program (Volunteer)</Title>
+          <Space direction={"vertical"} size={40}>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/sap.webp"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  <Text keyboard>2020</Text>
+                  Swift Accelerator Program (Volunteer)</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -307,14 +343,17 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 I volunteered to help the subsequent cohorts and
                 provide technical assistance.
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                Hackomania (Volunteer)</Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/hack.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  Hackomania (Volunteer)</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>
@@ -324,7 +363,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 bring together tech enthusiasts, students and working professionals from various backgrounds to tackle
                 real-world issues with tech solutions. At the hackathon, I helped with event logistics.
               </Text>
-            </div>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -334,15 +373,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Projects
           </Title>
-          <Space direction={"vertical"} size={"large"}>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                <Text keyboard>2021</Text>
-                SST Open House App</Title>
+          <Space direction={"vertical"} size={40}>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/oh19.jpg"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  <Text keyboard>2021</Text>
+                  SST Open House App</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>For SST's annual open house, I developed the Open House
@@ -358,21 +400,24 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <a href={"https://github.com/sst-inc/openhouse2020"} target={"_blank"}><Text keyboard>Link to Open House
                   App 2021</Text></a>
               </Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2018-2020</Text>
-                TTSH PACE</Title>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/pace.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2018-2020</Text>
+                  TTSH PACE</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>I helped to develop the TTSH PACE app. The project, a collaboration between Tan Tock Seng Hospital
                 and SST, aims to help
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
                 utilities like calculators for common formulas.</Text>
-            </div>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -382,14 +427,17 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           }}>
             My Achievements
           </Title>
-          <Space direction={"vertical"} size={"large"}>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2019</Text>
-                IMDA Techblazer Awards (Student) - Silver</Title>
+          <Space direction={"vertical"} size={40}>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/tb.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2019</Text>
+                  IMDA Techblazer Awards (Student) - Silver</Title>
+              </Space>
               <Text style={{
                 fontFamily: "Inter"
               }}>CodeCollab.io <a
@@ -397,15 +445,18 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 target={"_blank"}>attained Silver</a> in the IMDA Techblazer Awards, Student Category. Techblazer Awards
                 (student) is the Singapore's highest accolade for tech innovation that recognizes innovative ideas with
                 commercialisation potential developed by students.</Text>
-            </div>
-            <div>
-              <Title style={{
-                fontFamily: "Inter",
-                fontWeight: 500
-              }} level={4}>
-                <Text keyboard>2020</Text>
-                SST Inventive Minds Award</Title>
-            </div>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={'middle'}>
+                <Image src={"/sst.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2020</Text>
+                  SST Inventive Minds Award</Title>
+              </Space>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -438,6 +489,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   }}>I use C#, with ASP.NET Core on my personal projects, as it has a mature ecosystem. For example, I
                     frequently experiment with OAuth2.0 on IdentityServer4.</Text>
                 </div>
+                <Text keyboard>Others:</Text>
                 <List grid={{
                   gutter: 16,
                   xs: 1,
@@ -475,6 +527,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     development, with the help of React Native. I have used React in projects like CodeCollab and
                     Outside, and React Native in the Open House apps.</Text>
                 </div>
+                <Text keyboard>Others:</Text>
                 <List grid={{
                   gutter: 16,
                   xs: 1,
@@ -529,6 +582,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontFamily: 'Inter'
                   }}>I have worked with Agile Software Development while developing the TTSH PACE app.</Text>
                 </div>
+                <Text keyboard>Others:</Text>
                 <List grid={{
                   gutter: 16,
                   xs: 1,
@@ -570,36 +624,76 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented a
                     Resource Owner Password Grant workflow.</Text>
                 </div>
+                <Text keyboard>Others:</Text>
+                <List grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3
+                }}
+                      dataSource={[{title: "Let's Encrypt", link: "https://letsencrypt.org"}, {
+                        title: "Cloudflare",
+                        link: "https://clouflare.com"
+                      }, {title: "Nmap", link: 'https://nmap.org'}, {
+                        title: "Bettercap",
+                        link: "https://www.bettercap.org"
+                      }]}
+                      renderItem={item => (
+                        <List.Item>
+                          <a href={item.link} target={"_blank"}>
+                            <Text>{item.title}</Text>
+                          </a>
+                        </List.Item>
+                      )}
+                />
               </Space>
             </Panel>
             <Panel header="Databases" key="databases">
-              <List grid={{
-                gutter: 16,
-                xs: 1,
-                sm: 2,
-                md: 4,
-                lg: 4,
-                xl: 6,
-                xxl: 3
-              }}
-                    dataSource={[{title: "TiDB", link: "https://pingcap.com"}, {
-                      title: "MySQL",
-                      link: "https://mysql.com"
-                    }, {title: "MongoDB", link: "https://mongodb.com"}, {
-                      title: "Google Cloud Firestore",
-                      link: "https://cloud.google.com/firestore"
-                    }, {
-                      title: "Google Cloud Datastore",
-                      link: "https://cloud.google.com/datastore"
-                    }, {title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/"}]}
-                    renderItem={item => (
-                      <List.Item>
-                        <a href={item.link} target={"_blank"}>
-                          <Text>{item.title}</Text>
-                        </a>
-                      </List.Item>
-                    )}
-              />
+              <Space direction={"vertical"} size={"large"}>
+                <div>
+                  <a href={"https://mysql.com"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>MySQL</Title></a>
+                  <Text style={{
+                    fontFamily: 'Inter'
+                  }}>During the Ethical Hacking course at SST Inc, we were taught how to use MySQL to build a chatroom.
+                    I have also used MySQL as the database while implementing OAuth2.0 and built a
+                    centralized logging system with it</Text>
+                </div>
+                <Text keyboard>Others:</Text>
+                <List grid={{
+                  gutter: 16,
+                  xs: 1,
+                  sm: 2,
+                  md: 4,
+                  lg: 4,
+                  xl: 6,
+                  xxl: 3
+                }}
+                      dataSource={[{title: "TiDB", link: "https://pingcap.com"}, {
+                        title: "MongoDB",
+                        link: "https://mongodb.com"
+                      }, {
+                        title: "Google Cloud Firestore",
+                        link: "https://cloud.google.com/firestore"
+                      }, {
+                        title: "Google Cloud Datastore",
+                        link: "https://cloud.google.com/datastore"
+                      }, {title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/"}]}
+                      renderItem={item => (
+                        <List.Item>
+                          <a href={item.link} target={"_blank"}>
+                            <Text>{item.title}</Text>
+                          </a>
+                        </List.Item>
+                      )}
+                />
+
+              </Space>
             </Panel>
           </Collapse>
         </Content>
