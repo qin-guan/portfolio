@@ -271,8 +271,13 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   and deploy at greater efficiency.
                 </Text>
                 <div>
-                  <Button style={{cursor: 'pointer'}} href={"/outside"}>Find out more about what I do at
-                    Outside!</Button>
+                  <Collapse>
+                    <Panel header={"Letter of Recommendation"} key={"outside"}>
+                      <iframe
+                        src="https://onedrive.live.com/embed?cid=35655CF197B5953D&resid=35655CF197B5953D%212898&authkey=AHvFnaO7MKOrxQ8&em=2"
+                        width={'90%'} height={400} frameBorder="0" scrolling="no"/>
+                    </Panel>
+                  </Collapse>
                 </div>
               </Space>
             </div>
