@@ -1,21 +1,21 @@
 import React from "react"
-import {Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Collapse, Typography, List, Card} from "antd"
+import { Avatar, Button, Col, Divider, Layout, Row, Space, Timeline, Collapse, Typography, List, Card } from "antd"
 import Page from "../components/Page"
-import {ArrowDownOutlined} from "@ant-design/icons"
-import {GithubOutlined, InstagramOutlined, LinkedinOutlined, GitlabOutlined} from "@ant-design/icons/lib"
+import { ArrowDownOutlined } from "@ant-design/icons"
+import { GithubOutlined, InstagramOutlined, LinkedinOutlined, GitlabOutlined } from "@ant-design/icons/lib"
 
-import {scroller, Element} from 'react-scroll'
+import { scroller, Element } from "react-scroll"
 
-import Desktop from "../components/Desktop";
-import Mobile from "../components/Mobile";
-import Image from "../components/Image";
-import Flex from "../components/Flex";
+import Desktop from "../components/Desktop"
+import Mobile from "../components/Mobile"
+import Image from "../components/Image"
+import Flex from "../components/Flex"
 
-const {Title, Text} = Typography
+const { Title, Text } = Typography
 
-const {Footer, Content} = Layout
+const { Footer, Content } = Layout
 
-const {Panel} = Collapse
+const { Panel } = Collapse
 
 interface IIndexPageState {
 }
@@ -97,7 +97,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             <Button onClick={() => scroller.scrollTo("start", {
               duration: 500,
               delay: 0,
-              smooth: 'easeInOutQuart'
+              smooth: "easeInOutQuart"
             })} size="large" type={"text"} shape="circle" icon={
               <ArrowDownOutlined/>
             }/>
@@ -112,7 +112,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Space direction={"vertical"} size={40}>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/sst.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -131,7 +131,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/inc.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -152,7 +152,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/sap.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -172,7 +172,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/sap.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -196,7 +196,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/np.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -224,7 +224,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Space direction={"vertical"} size={40}>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/cc.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -246,7 +246,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/inc.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -264,7 +264,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/inc.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -282,7 +282,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/out.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -308,7 +308,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     <Panel header={"Letter of Recommendation"} key={"outside"}>
                       <iframe
                         src="https://onedrive.live.com/embed?cid=35655CF197B5953D&resid=35655CF197B5953D%212898&authkey=AHvFnaO7MKOrxQ8&em=2"
-                        width={'90%'} height={400} frameBorder="0" scrolling="no"/>
+                        width={"90%"} height={400} frameBorder="0" scrolling="no"/>
                     </Panel>
                   </Collapse>
                 </div>
@@ -325,7 +325,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Space direction={"vertical"} size={40}>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/sap.webp"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -345,7 +345,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/hack.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -375,7 +375,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Space direction={"vertical"} size={40}>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/oh19.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -402,7 +402,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
               </Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/pace.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -429,7 +429,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
           </Title>
           <Space direction={"vertical"} size={40}>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/tb.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -447,7 +447,36 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 commercialisation potential developed by students.</Text>
             </Flex>
             <Flex>
-              <Space direction={"vertical"} size={'middle'}>
+              <Space direction={"vertical"} size={"middle"}>
+                <Image src={"/microsoft.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2020</Text>
+                  Microsoft Imagine Cup Junior - 1st Runner Up</Title>
+              </Space>
+              <Text>My group <a
+                href={"https://imaginecup.microsoft.com/en-us/junior"}
+                target={"_blank"}>attained 1st runner up</a> in the Microsoft Imagine Cup Junior competition. Imagine
+                Cup Junior provides students aged 13 to 18 the opportunity to learn about technology and how it can be
+                used to positively change the world. In 2020, the global challenge was focused on Artificial
+                Intelligence (AI), introducing students to AI and Microsoft’s AI for Good initiatives so they can come
+                up with ideas to solve social, cultural and environmental issues. It’s also a great opportunity to
+                encourage students to develop and practice 21st century skills like communication, collaboration,
+                critical thinking and creativity.</Text>
+              <div>
+                <Collapse>
+                  <Panel header={"Our Submission"} key={"imaginecup"}>
+                    <iframe
+                      src="https://s2017sstedusg-my.sharepoint.com/:w:/g/personal/qin_guan_s2017_sst_edu_sg/EemBnkvg6KZAlLrn6qmb7c4BX1bls5kpYR4jeUYHqLQ3cQ"
+                      width={"90%"} height={400} frameBorder="0" scrolling="no"/>
+                  </Panel>
+                </Collapse>
+              </div>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={"middle"}>
                 <Image src={"/sst.png"}/>
                 <Title style={{
                   fontFamily: "Inter",
@@ -475,7 +504,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>Typescript</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>Majority of the projects I work on utilize Typescript. Some examples include the SST Open House
                     apps, and my work at Outside.</Text>
                 </div>
@@ -485,7 +514,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>C#</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>I use C#, with ASP.NET Core on my personal projects, as it has a mature ecosystem. For example, I
                     frequently experiment with OAuth2.0 on IdentityServer4.</Text>
                 </div>
@@ -499,10 +528,10 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{title: "Swift", link: "https://swift.org"}, {
+                      dataSource={[{ title: "Swift", link: "https://swift.org" }, {
                         title: "Python",
                         link: "https://python.org"
-                      }, {title: "Go", link: "https://golang.org"}, {title: "Rust", link: "https://rustlang.org"}]}
+                      }, { title: "Go", link: "https://golang.org" }, { title: "Rust", link: "https://rustlang.org" }]}
                       renderItem={item => (
                         <List.Item>
                           <a href={item.link} target={"_blank"}>
@@ -521,7 +550,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>React/React Native</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>React is my preferred framework for front end development. It has a rich ecosystem with a great
                     support from the community. Knowing React also allows me to extend my skills into native app
                     development, with the help of React Native. I have used React in projects like CodeCollab and
@@ -537,10 +566,10 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{title: "NestJS", link: "https://nestjs.com"}, {
+                      dataSource={[{ title: "NestJS", link: "https://nestjs.com" }, {
                         title: "ASP.NET",
                         link: "https://asp.net"
-                      }, {title: "Django", link: "https://djangoproject.com"}]}
+                      }, { title: "Django", link: "https://djangoproject.com" }]}
                       renderItem={item => (
                         <List.Item>
                           <a href={item.link} target={"_blank"}>
@@ -559,7 +588,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>Teamcity</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>While working at Outside, I integrated CI/CD into the workflow with Teamcity, to help the team be
                     able to test and deploy faster.</Text>
                 </div>
@@ -569,7 +598,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>Kubernetes</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>I have experience in working with Kubernetes, through setting up distributed databases on Google
                     Cloud Platform.</Text>
                 </div>
@@ -579,7 +608,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>Azure DevOps (Agile)</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>I have worked with Agile Software Development while developing the TTSH PACE app.</Text>
                 </div>
                 <Text keyboard>Others:</Text>
@@ -592,13 +621,13 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{title: "Rushstack", link: "https://rushstack.io"}, {
+                      dataSource={[{ title: "Rushstack", link: "https://rushstack.io" }, {
                         title: "Google Cloud Platform",
                         link: "https://cloud.google.com"
-                      }, {title: "Azure", link: "https://azure.com"}, {
+                      }, { title: "Azure", link: "https://azure.com" }, {
                         title: "Tencent Cloud",
                         link: "https://intl.cloud.tencent.com"
-                      }, {title: "Github Actions", link: "https://github.com"}, {
+                      }, { title: "Github Actions", link: "https://github.com" }, {
                         title: "Docker",
                         link: "https://docker.com"
                       }]}
@@ -620,7 +649,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>OAuth2.0 Standard</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented a
                     Resource Owner Password Grant workflow.</Text>
                 </div>
@@ -634,10 +663,10 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{title: "Let's Encrypt", link: "https://letsencrypt.org"}, {
+                      dataSource={[{ title: "Let's Encrypt", link: "https://letsencrypt.org" }, {
                         title: "Cloudflare",
                         link: "https://clouflare.com"
-                      }, {title: "Nmap", link: 'https://nmap.org'}, {
+                      }, { title: "Nmap", link: "https://nmap.org" }, {
                         title: "Bettercap",
                         link: "https://www.bettercap.org"
                       }]}
@@ -659,7 +688,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     fontWeight: 500
                   }}>MySQL</Title></a>
                   <Text style={{
-                    fontFamily: 'Inter'
+                    fontFamily: "Inter"
                   }}>During the Ethical Hacking course at SST Inc, we were taught how to use MySQL to build a chatroom.
                     I have also used MySQL as the database while implementing OAuth2.0 and built a
                     centralized logging system with it</Text>
@@ -674,7 +703,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   xl: 6,
                   xxl: 3
                 }}
-                      dataSource={[{title: "TiDB", link: "https://pingcap.com"}, {
+                      dataSource={[{ title: "TiDB", link: "https://pingcap.com" }, {
                         title: "MongoDB",
                         link: "https://mongodb.com"
                       }, {
@@ -683,7 +712,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                       }, {
                         title: "Google Cloud Datastore",
                         link: "https://cloud.google.com/datastore"
-                      }, {title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/"}]}
+                      }, { title: "Azure Cosmos DB", link: "https://azure.microsoft.com/en-us/services/cosmos-db/" }]}
                       renderItem={item => (
                         <List.Item>
                           <a href={item.link} target={"_blank"}>
