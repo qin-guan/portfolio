@@ -469,7 +469,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 <Collapse>
                   <Panel header={"Our Submission"} key={"imaginecup"}>
                     <iframe
-                      src="https://s2017sstedusg-my.sharepoint.com/:w:/g/personal/qin_guan_s2017_sst_edu_sg/EemBnkvg6KZAlLrn6qmb7c4BX1bls5kpYR4jeUYHqLQ3cQ"
+                      src="https://s2017sstedusg-my.sharepoint.com/personal/qin_guan_s2017_sst_edu_sg/_layouts/15/Doc.aspx?sourcedoc={4b9e81e9-e8e0-40a6-94ba-e7eaa99bedce}&amp;action=embedview&amp;wdStartOn=1"
                       width={"90%"} height={400} frameBorder="0" scrolling="no"/>
                   </Panel>
                 </Collapse>
