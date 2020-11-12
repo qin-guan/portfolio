@@ -558,7 +558,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             <Panel header="Frameworks" key="frameworks">
               <Space direction={"vertical"} size={"large"}>
                 <div>
-                  <a href={"https://www.typescriptlang.org"} target={"_blank"}><Title level={4} style={{
+                  <a href={"https://reactjs.org"} target={"_blank"}><Title level={4} style={{
                     fontFamily: "Inter",
                     fontWeight: 500
                   }}>React/React Native</Title></a>
@@ -568,6 +568,15 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     support from the community. Knowing React also allows me to extend my skills into native app
                     development, with the help of React Native. I have used React in projects like CodeCollab and
                     Outside, and React Native in the Open House apps.</Text>
+                </div>
+                <div>
+                  <a href={"https://asp.net"} target={"_blank"}><Title level={4} style={{
+                    fontFamily: "Inter",
+                    fontWeight: 500
+                  }}>ASP.NET Core</Title></a>
+                  <Text style={{
+                    fontFamily: "Inter"
+                  }}>ASP.NET Core is my preferred framework for back end development. I prefer to use ASP.NET Core as I find CSharp to be a very intuitive language. ASP.NET Core is also extremely performant and has the most support for OAuth2.0.</Text>
                 </div>
                 <Text keyboard>Others:</Text>
                 <List grid={{
