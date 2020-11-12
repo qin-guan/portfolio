@@ -418,6 +418,19 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 doctors in TTSH quicky reference standard operating procedures and guidance material. It also includes
                 utilities like calculators for common formulas.</Text>
             </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={"middle"}>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2020</Text>
+                  Strife</Title>
+              </Space>
+              <Text style={{
+                fontFamily: "Inter"
+              }}>My latest project is Strife. Strife is an open source collaborative and communication platform built on ASP.NET Core Blazor, MVC, and SignalR. It was started mainly as a way for me to try out ASP.NET Core Blazor, and to improve my OAuth2.0/OpenID Connect skills.</Text>
+            </Flex>
           </Space>
         </Content>
         <Divider/>
@@ -651,7 +664,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   <Text style={{
                     fontFamily: "Inter"
                   }}>I have read up extensively on OAuth2.0 while working on APIs at Outside, and implemented a
-                    Resource Owner Password Grant workflow.</Text>
+                    Resource Owner Password Grant workflow. While working on Strife, my latest project, I have implemented OpenID Connect, as well as my own Identity Provider with OAuth and ASP.NET Core Identity</Text>
                 </div>
                 <Text keyboard>Others:</Text>
                 <List grid={{
@@ -669,7 +682,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                       }, { title: "Nmap", link: "https://nmap.org" }, {
                         title: "Bettercap",
                         link: "https://www.bettercap.org"
-                      }]}
+                      }, { title: "ASP.NET Core Identity", link: "https://asp.net" }]}
                       renderItem={item => (
                         <List.Item>
                           <a href={item.link} target={"_blank"}>
