@@ -290,7 +290,6 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 }} level={4}>
                   <Text keyboard>2019</Text>
                   Software Engineer at Outside Technologies Private Limited
-                  <Text keyboard>Current</Text>
                 </Title>
               </Space>
               <Space direction={"vertical"}>
