@@ -80,7 +80,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                   }}>Co-Founder of <a href={"https://codecollab.io"} target={"_blank"}>CodeCollab.io</a></Text>
                   <Text style={{
                     fontFamily: "Inter"
-                  }}>Software Engineer at <a href={"https://outsideapp.co"} target={"_blank"}>Outside</a></Text>
+                  }}>Software Engineer Intern at <a href={"https://pigeonholelive.com"} target={"_blank"}>PigeonLab</a></Text>
                 </div>
               </Space>
             </Col>
@@ -312,6 +312,26 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                     </Panel>
                   </Collapse>
                 </div>
+              </Space>
+            </Flex>
+            <Flex>
+              <Space direction={"vertical"} size={"middle"}>
+                <Image src={"/out.png"}/>
+                <Title style={{
+                  fontFamily: "Inter",
+                  fontWeight: 500
+                }} level={4}>
+                  <Text keyboard>2021</Text>
+                  Software Engineer Intern at PigeonLab Private Limited
+                  <Text keyboard>Current</Text>
+                </Title>
+              </Space>
+              <Space direction={"vertical"}>
+                <Text style={{
+                  fontFamily: "Inter"
+                }}>
+                  In 2021, I joined the PigeonLab team, which created <a href={"https://pigeonholelive.com"} target={"_blank"}>Pigeonhole Live</a>, a live audience engagement platform, as a Software Engineer Intern. At PigeonLab, I worked on our internal tooling with frameworks like VueJS and ExpressJS. I also gained experience working with AWS services such as S3. Later on in the internship, I also got to work on our Public API in Go and Public API documentation with React.     
+                </Text>
               </Space>
             </Flex>
           </Space>
