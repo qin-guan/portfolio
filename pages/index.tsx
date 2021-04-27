@@ -316,7 +316,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
             </Flex>
             <Flex>
               <Space direction={"vertical"} size={"middle"}>
-                <Image src={"/pigeon.png"}/>
+                <Image src={"/pigeon.svg"}/>
                 <Title style={{
                   fontFamily: "Inter",
                   fontWeight: 500
