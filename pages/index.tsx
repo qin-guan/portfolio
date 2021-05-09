@@ -70,7 +70,7 @@ class IndexPage extends React.Component<IIndexPageProps, IIndexPageState> {
                 </Space>
                 <Title style={{
                   fontFamily: "Inter"
-                }} level={4}>I'm a student from the School of Science and Technology, Singapore</Title>
+                }} level={4}>I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic</Title>
                 <div style={{
                   display: "flex",
                   flexDirection: "column"
