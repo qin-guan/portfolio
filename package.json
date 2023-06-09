@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "Qin Guan's portfolio website",
-  "scripts": {},
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
   "author": "Qin Guan",
   "license": "CC-BY-SA-4.0",
   "devDependencies": {
