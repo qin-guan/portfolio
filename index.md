@@ -2,7 +2,9 @@
 
 I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
 
-> also Co-Founder of [CodeCollab.io](https://codecollab.io) and Software Engineer Intern at [Open Government Products](https://open.gov.sg)
+> Software Engineer Intern at [Open Government Products](https://open.gov.sg)
+>
+> Co-Founder of [CodeCollab.io](https://codecollab.io)
 
 ## :school: My education
 
@@ -22,7 +24,14 @@ The Swift Innovators Summit is a summit held at the end of the Swift Accelerator
 
 ## :computer: My technical experiences
 
+### Software Engineer Intern at Open Government Products <Badge text="current" />
+
+At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
+
 ### Co-Founded CodeCollab.io <Badge type="default" text="2018-2023" />
 
 Together with my schoolmate, Carl, we created CodeCollab, a collaborative code editor that allows anyone to compile, collaborate and create code anywhere, at any time.
 
+### Software Engineer Intern at PigeonLab <Badge type="default" text="2021" />
+
+In 2021, I joined the PigeonLab team, which created [Pigeonhole Live](https://pigeonholelive.com), a live audience engagement platform, as a Software Engineer Intern. At PigeonLab, I worked on our internal tooling with frameworks like VueJS and ExpressJS. I also gained experience working with AWS services such as S3. Later on in the internship, I also got to work on our Public API in Go and Public API documentation with React.
