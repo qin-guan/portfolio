@@ -10,7 +10,8 @@ export default defineConfig({
       provider: 'local'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/qin-guan' }
+      { icon: 'github', link: 'https://github.com/qin-guan' },
+      { icon: 'linkedin', link: 'https://linkedin.com/in/qin-guan' }
     ]
   }
 })

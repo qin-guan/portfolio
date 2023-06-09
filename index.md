@@ -6,9 +6,23 @@ I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
 >
 > Co-Founder of [CodeCollab.io](https://codecollab.io)
 
-## :school: My education
+## :computer: Work stuff
 
-### Ngee Ann Polytechnic <Badge type="tip" text="2021 - Current" />
+### Software Engineer Intern at Open Government Products <Badge text="current" />
+
+At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
+
+### Co-Founded CodeCollab.io <Badge type="info" text="2018-2023" />
+
+Together with my schoolmate, Carl, we created CodeCollab, a collaborative code editor that allows anyone to compile, collaborate and create code anywhere, at any time.
+
+### Software Engineer Intern at PigeonLab <Badge type="info" text="2021" />
+
+In 2021, I joined the PigeonLab team, which created [Pigeonhole Live](https://pigeonholelive.com), a live audience engagement platform, as a Software Engineer Intern. At PigeonLab, I worked on our internal tooling with frameworks like VueJS and ExpressJS. I also gained experience working with AWS services such as S3. Later on in the internship, I also got to work on our Public API in Go and Public API documentation with React.
+
+## :school: School stuff
+
+### Ngee Ann Polytechnic <Badge type="tip" text="2021 - current" />
 
 I am currently pursuing a diploma in Cybersecurity and Digital Forensics, together with the Certificate in Advanced Computing Mathematics at Ngee Ann Polytechnic.
 
@@ -22,16 +36,32 @@ I am part of the pioneering batch of the Swift Accelerator Program. The 9 months
 
 The Swift Innovators Summit is a summit held at the end of the Swift Accelerator Program for students to showcase their apps. My schoolmate, Carl, and I created an app, Parkgoer, and presented it at the Summit to IMDA Assistant Chief Executive of Planning, Ms Koh Li-Na. Parkgoer is an app to help children find parks and recreational facilities around Singapore.
 
-## :computer: My technical experiences
+## :thumbsup: Club stuff
 
-### Software Engineer Intern at Open Government Products <Badge text="current" />
+### President, Overflow SIG
 
-At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
+I was the president of the Programming and Technology Special Interest Group in Ngee Ann Polytechnic. During my term, I worked closely with my team to organize workshops, events and competitions for our club members.
 
-### Co-Founded CodeCollab.io <Badge type="info" text="2018-2023" />
+I spearheaded many initiatives within the club to improve transparency, teamwork, and our member engagement.
 
-Together with my schoolmate, Carl, we created CodeCollab, a collaborative code editor that allows anyone to compile, collaborate and create code anywhere, at any time.
+> Many of our works can be found here <https://github.com/np-overflow>
+>
+> Please check out our website as well! <https://np-overflow.club>
 
-### Software Engineer Intern at PigeonLab <Badge type="info" text="2021" />
+### Tech Lead, NullSec SIG
 
-In 2021, I joined the PigeonLab team, which created [Pigeonhole Live](https://pigeonholelive.com), a live audience engagement platform, as a Software Engineer Intern. At PigeonLab, I worked on our internal tooling with frameworks like VueJS and ExpressJS. I also gained experience working with AWS services such as S3. Later on in the internship, I also got to work on our Public API in Go and Public API documentation with React.
+I was a technical lead for the Cybersecurity Special Interest Group in Ngee Ann Polytechnic.
+
+> Many of our works can be found here <https://github.com/NullSec-SIG>
+>
+> Please check out our website as well! <https://nullsecsig.com>
+
+### Vice-President, ICT Society
+
+I was the VP of Projects in the Society for the School of ICT in Ngee Ann Polytechnic. I worked closely with my team to organize flagship events for our school.
+
+## :medal_sports: Circle things
+
+### Medallion of Excellence, WorldSkills Singapore 2023
+
+I participated in the IT Software Solutions for Business WSS 2023 competition, and clinched the Medallion of Excellence.
