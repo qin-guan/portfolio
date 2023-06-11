@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Cybersecurity student at Ngee Ann Polytechnic",
   lastUpdated: true,
   themeConfig: {
+    outline: 'deep',
     search: {
       provider: 'local'
     },
