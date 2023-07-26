@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  mpa: true,
   title: "Qin Guan",
   description: "Cybersecurity student at Ngee Ann Polytechnic",
   lastUpdated: true,
@@ -13,6 +14,16 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/qin-guan' },
       { icon: 'linkedin', link: 'https://linkedin.com/in/qin-guan' }
+    ],
+    nav: [
+      {
+        text: 'Home',
+        link: '/'
+      },
+      {
+        text: 'Projects',
+        link: '/projects'
+      }
     ]
   }
 })
