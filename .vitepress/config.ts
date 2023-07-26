@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  mpa: true,
   title: "Qin Guan",
   description: "Cybersecurity student at Ngee Ann Polytechnic",
   lastUpdated: true,
