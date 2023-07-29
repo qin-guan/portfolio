@@ -12,6 +12,10 @@ I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
 
 At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
 
+See [this page](/projects#adminformgovsg) for more information.
+
+I am currently awaiting my next internship at OGP, which will start on 11 Sept.
+
 ### Co-Founded CodeCollab.io <Badge type="info" text="2018-2023" />
 
 Together with my schoolmate, Carl, we created CodeCollab, a collaborative code editor that allows anyone to compile, collaborate and create code anywhere, at any time.
