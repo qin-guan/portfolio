@@ -2,6 +2,8 @@
 
 ## `paperless`
 
+![Image](/projects-paperless.jpeg)
+
 [GitHub](https://github.com/qin-guan/paperless) | [Website](https://paperless.pages.dev) 
 
 A platform for you to make your own digital namecards, and share them.
