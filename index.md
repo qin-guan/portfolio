@@ -6,6 +6,8 @@ I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
 >
 > Co-Founder of [CodeCollab.io](https://codecollab.io)
 
+[CV](/cv.pdf)
+
 ## :computer: Work stuff
 
 ### Software Engineer Intern at Open Government Products <Badge text="current" />
