@@ -1,5 +1,13 @@
 # Projects
 
+## `paperless`
+
+[GitHub](https://github.com/qin-guan/paperless) | [Website](https://paperless.pages.dev) 
+
+A platform for you to make your own digital namecards, and share them.
+
+Was a good place for me to play with Cloudflare KV and Next.JS 13's App Router + RSC capabilities.
+
 ## `wsa-tollbooth`
 
 ![Image](/projects-wsa-tollbooth.jpeg)
@@ -39,3 +47,4 @@ Vite, React, React Router, Chakra UI, Tanstack Query, Tanstack Virtual, S3
 NestJS, Mongoose, MongoDB, AWS Lambda
 
 :::
+
