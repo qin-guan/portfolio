@@ -22,6 +22,11 @@ export default defineConfig({
       {
         text: 'Projects',
         link: '/projects'
+      },
+      {
+        text: 'CV',
+        link: '//cv.pdf',
+        target: '_blank',
       }
     ]
   }

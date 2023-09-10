@@ -3,10 +3,6 @@
 I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
 
 > Software Engineer Intern at [Open Government Products](https://open.gov.sg)
->
-> Co-Founder of [CodeCollab.io](https://codecollab.io)
-
-[CV](/cv.pdf)
 
 ## :computer: Work stuff
 
@@ -16,7 +12,7 @@ At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.
 
 See [this page](/projects#adminformgovsg) for more information.
 
-I am currently awaiting my next internship at OGP, which will start on 11 Sept.
+I am currently on the [data.gov.sg](https://data.gov.sg) team.
 
 ### Co-Founded CodeCollab.io <Badge type="info" text="2018-2023" />
 
