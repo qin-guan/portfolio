@@ -1,5 +1,19 @@
 # Projects
 
+## `sstalumniassociation`
+
+[GitHub](https://github.com/sstalumniassociation/web) | [Website](https://sstaa.qinguan.me)
+
+Platform for provide SST Alumni access to various services, such as entry approval, passes and event stuff.
+
+:::details Tech stack
+
+Nuxt3, Drizzle, Framework7, TailwindCSS, NuxtUI
+
+CloudFlare, Turso
+
+:::
+
 ## `paperless`
 
 ![Image](/projects-paperless.jpeg)
