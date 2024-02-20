@@ -8,9 +8,11 @@ Platform for provide SST Alumni access to various services, such as entry approv
 
 :::details Tech stack
 
+.NET, EF Core, gRPC
+
 Nuxt3, Drizzle, Framework7, TailwindCSS, NuxtUI
 
-CloudFlare, Turso
+CloudFlare, Turso, Fly.io
 
 :::
 
