@@ -36,7 +36,7 @@ export default defineConfig({
       },
       {
         text: 'CV',
-        link: '//cv.pdf',
+        link: 'https://qinguan.me/cv.pdf',
         target: '_blank',
       }
     ]
