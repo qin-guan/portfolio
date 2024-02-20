@@ -1,10 +1,14 @@
 # Hey :wave:, I'm Qin Guan
 
-I'm a Cybersecurity and Digital Forensics student from Ngee Ann Polytechnic
+Yet Another Software Engineer.
 
-> Software Engineer Intern at [Open Government Products](https://open.gov.sg)
+Intern at [Open Government Products](https://open.gov.sg)
 
 ## :computer: Work stuff
+
+### Unofficially breaking things at SST Alumni Association
+
+I do tech [stuff](https://github.com/sstalumniassociation).
 
 ### Software Engineer Intern at Open Government Products <Badge text="current" />
 
@@ -24,7 +28,7 @@ In 2021, I joined the PigeonLab team, which created [Pigeonhole Live](https://pi
 
 ## :school: School stuff
 
-### Ngee Ann Polytechnic <Badge type="tip" text="2021 - current" />
+### Ngee Ann Polytechnic <Badge type="tip" text="2021 - 2024" />
 
 I am currently pursuing a diploma in Cybersecurity and Digital Forensics, together with the Certificate in Advanced Computing Mathematics at Ngee Ann Polytechnic.
 
