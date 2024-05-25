@@ -12,11 +12,13 @@ I do tech [stuff](https://github.com/sstalumniassociation).
 
 ### Software Engineer Intern at Open Government Products <Badge text="current" />
 
-At Open Government Products, I was a part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
+Formally part of the [form.gov.sg](https://form.gov.sg) team and worked on internal tooling for our product operations team.
 
 See [this page](/projects#adminformgovsg) for more information.
 
-I am currently on the [data.gov.sg](https://data.gov.sg) team.
+Formally also on the [data.gov.sg](https://data.gov.sg) team and worked on features + improving DX.
+
+Currently working on organization wide security initiatives!
 
 ### Co-Founded CodeCollab.io <Badge type="info" text="2018-2023" />
 
