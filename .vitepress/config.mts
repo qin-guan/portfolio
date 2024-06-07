@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Qin Guan",
-  description: "Cybersecurity student at Ngee Ann Polytechnic",
+  description: "Average software enjoyer",
   lastUpdated: true,
   head: [
     [
