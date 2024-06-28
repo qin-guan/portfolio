@@ -8,6 +8,8 @@ Jarvis of the house, but dumber. Tries to be helpful but sometimes isn't. Powere
 
 Started after I got fed up with writing YAML Home Assistant automations.
 
+Homer processes millions of events a month for me and makes it useful.
+
 First time using ReactiveX (Rx.NET) and learned a lot.
 
 :::details Tech stack
