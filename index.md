@@ -2,7 +2,7 @@
 
 Yet Another Software Engineer.
 
-Intern at [Open Government Products](https://open.gov.sg)
+[Want to buy me a cup of coffee?](https://donate.stripe.com/5kA6pAbQReQO2LC000)
 
 ## :computer: Work stuff
 
