@@ -31,6 +31,10 @@ export default defineConfig({
         link: '/'
       },
       {
+        text: 'Seats',
+        link: '/seats'
+      },
+      {
         text: 'Projects',
         link: '/projects'
       },
