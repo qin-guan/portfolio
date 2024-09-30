@@ -2,11 +2,13 @@
 
 As a student, I find that I'm always searching around the country for places to sit down and do work, or use my laptop.
 
-Here's a compilation of some of them
+Here's a compilation of some of them =)
 
 ## Fairmont, Raffles City
 
 Located on the floor above the main Raffles City mall, there are plenty of chairs and tables here to do work on. May be crowded during events.
+
+Access this hidden place through the escalators at G2000!
 
 | Chairs | Tables | Toilets | Charging ports |
 |---|---|---|---|
