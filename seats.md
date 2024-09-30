@@ -2,7 +2,9 @@
 
 As a student, I find that I'm always searching around the country for places to sit down and do work, or use my laptop.
 
-Here's a compilation of some of them =)
+Why spend money at Starbucks for an average drink when you can get bubble tea and chill at a place that's free?
+
+Anyways, here's a compilation of some of them =)
 
 ## Fairmont, Raffles City
 
