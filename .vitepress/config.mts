@@ -5,6 +5,9 @@ export default defineConfig({
   title: "Qin Guan",
   description: "Average software enjoyer",
   lastUpdated: true,
+  sitemap: {
+    hostname: 'https://qinguan.me'
+  },
   head: [
     [
       'script',
