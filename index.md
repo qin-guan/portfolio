@@ -1,3 +1,9 @@
+<script setup>
+
+import Days from './components/Days.vue'
+
+</script>
+
 # Hey :wave:, I'm Qin Guan
 
 Yet Another Software Engineer.
