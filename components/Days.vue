@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-const days = daysBetween(new Date("2036-08-15"), new Date(Date.now()))
+const days = daysBetween(new Date("2026-08-15"), new Date(Date.now()))
 
 function daysBetween(date1, date2) {
     const ONE_DAY = 1000 * 60 * 60 * 24;
