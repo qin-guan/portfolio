@@ -2,6 +2,8 @@
 
 Yet Another Software Engineer.
 
+I am <Days /> from OWADIO-ing.
+
 [Want to buy me a cup of coffee?](https://donate.stripe.com/5kA6pAbQReQO2LC000)
 
 ## :computer: Work stuff
