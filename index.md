@@ -10,9 +10,7 @@ Yet Another Software Engineer.
 
 I am <Days /> from OWADIO-ing.
 
-Currently crashing out over being posted to 2SIR as a trooper.
-
-[Want to buy me a cup of coffee?](https://donate.stripe.com/5kA6pAbQReQO2LC000)
+[Want to buy me a cup of coffee?](https://buy.stripe.com/fZedS2f33gYW0Du8wx)
 
 ## :computer: Work stuff
 
