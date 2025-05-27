@@ -10,6 +10,8 @@ Simplify and automate facility bookings for 15+ facilities around my NS camp. In
 
 .NET, Aspire, New Relic, Coolify (deployment)
 
+Nuxt3, Kiota, PrimeVue, TainwindCSS, `vue-cal`
+
 :::
 
 ## `Homer`
@@ -28,7 +30,7 @@ First time using ReactiveX (Rx.NET) and learned a lot.
 
 .NET, NetDaemon (+ Rx.NET), Aspire, New Relic, Coolify (deployment)
 
-Nuxt3, Kiota, PrimeVue, TainwindCSS, `vue-cal`
+DataGovSG APIs, LTA DataMall APIs, SimplyGo APIs
 
 :::
 
