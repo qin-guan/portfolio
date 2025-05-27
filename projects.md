@@ -1,5 +1,17 @@
 # Projects
 
+## `Fbs`
+
+[GitHub](https://github.com/qin-guan/Fbs) | [Website](https://3sib-fbs.from.sg)
+
+Simplify and automate facility bookings for 15+ facilities around my NS camp. Integrates with Google Calendar, Google Sheets, and Telegram for easy management and a hassle-free experience.
+
+:::details Tech stack
+
+.NET, Aspire, New Relic, Coolify (deployment)
+
+:::
+
 ## `Homer`
 
 [GitHub](https://github.com/qin-guan/Homer)
@@ -16,6 +28,8 @@ First time using ReactiveX (Rx.NET) and learned a lot.
 
 .NET, NetDaemon (+ Rx.NET), Aspire, New Relic, Coolify (deployment)
 
+Nuxt3, Kiota, PrimeVue, TainwindCSS, `vue-cal`
+
 :::
 
 ## `DrivePermissionScanner`
@@ -27,25 +41,6 @@ Hobby project for work. We have 100k+ files and we want to grab an overview of t
 :::details Tech stack
 
 .NET, TPL Dataflow, Google Drive APIs
-
-:::
-
-:::details Mini rant
-
-It's my first time building a fast (essentially concurrent/parallel) BFS implementation. I think it's pretty finnicky and also had a few people ask me why I chose to use .NET for it when there are "better" options out there like Go or Java which have nicer concurrency primitives (green threads / goroutines v. async await), so I feel like I need to justify it a little bit here.
-
-Out of the box, TPL Dataflow is _super_ easy to setup and manage parallelism with. Every transformer is essentially it's own little function and I don't have to care about spinning up workers or manage synchronization across them (kind of). No need to spin up goroutines and manually writing WaitGroups for them. Everything just works.
-
-> Of course, that's not saying that having to write goroutines or manually manage synchronization is a _bad_ thing. It's very helpful to have access to these low level primitives when you need them. It just so happens that having a higher level construct is nicer in this specific case! Every language has it's own tradeoffs, use the one you're most comfortable with for the project!
-
-Also, there are nice benefits to using .NET, which I feel like aren't appreciated enough in the general developer community (because of Microsoft's tainted history). But why can't we appreciate technology for what it can accomplish today? 
-
-* Modern .NET / C# is super fast. You get multi-threaded performance out of the box (v. NodeJS) without sacrificing high level implementation simplicity (v. Go)
-* Source generators. I can build a CLI app by writing normal functions. All the CLI params are inferred for me automagically. So so so convenient. Of course, source generators can also do a whole lot more
-* The syntax is so similar to TypeScript
-* The syntax allows me to be more concise and expressive, and also _ever so slightly more_ functional!
-
-Anyways, end of rant.
 
 :::
 
