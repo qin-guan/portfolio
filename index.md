@@ -60,6 +60,14 @@ I did a bit of Swift in the pioneering batch of the SAP, which is a 9 months lon
 
 ## :thumbsup: Random stuff I did over the years
 
+### Domain Administrator, justfuckingusevue.com
+
+Sponsored purchase. I have yet to come up with a good webpage idea for it.
+
+### Domain Administrator, from.sg
+
+Impulse purchase.
+
 ### Venue, Logistics and Swag IC, HackOMania 2023
 
 I procured 200+ ducks for swag, amongst handling other things like venue and other logistics.
