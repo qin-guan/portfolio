@@ -58,7 +58,17 @@ O-Level subjects + and Computing.
 
 I did a bit of Swift in the pioneering batch of the SAP, which is a 9 months long program by IMDA and Apple.
 
-## :thumbsup: Funsies
+## :thumbsup: Random stuff I did over the years
+
+### Venue, Logistics and Swag IC, HackOMania 2023
+
+I procured 200+ ducks for swag, amongst handling other things like venue and other logistics.
+
+The ducks were definitely the most important part of the hackathon.
+
+### Developer, HackOMania 2025
+
+I make website.
 
 ### President, Overflow SIG
 
