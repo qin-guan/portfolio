@@ -12,10 +12,6 @@ I am <Days /> from OWADIO-ing.
 
 ## :computer: Work stuff
 
-### Hacktron AI
-
-Exciting stuff to come, hopefully.
-
 ### SST Alumni Association
 
 I do tech [stuff](https://github.com/sstalumniassociation).
@@ -62,7 +58,7 @@ I did a bit of Swift in the pioneering batch of the SAP, which is a 9 months lon
 
 ### Domain Administrator, justfuckingusevue.com
 
-Sponsored purchase. I have yet to come up with a good webpage idea for it.
+Impulse purchase. I have yet to come up with a good webpage idea for it.
 
 ### Domain Administrator, from.sg
 
