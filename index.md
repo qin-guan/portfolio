@@ -15,7 +15,6 @@ I am <Days /> from OWADIO-ing.
 Some of these services below are provided for free on my domain. You may choose to make use of them~
 
 - `*.dns.qinguan.me` - DoT / DoH DNS
-- `hbbs.qinguan.me:21117` - RustDesk `hbbs`
 
 ## :computer: Work stuff
 
