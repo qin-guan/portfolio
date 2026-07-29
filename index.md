@@ -10,6 +10,13 @@ I am <Days /> from OWADIO-ing.
 
 [I am also very broke, please gib money](https://buy.stripe.com/fZedS2f33gYW0Du8wx)
 
+## Free stuff
+
+Some of these services below are provided for free on my domain. You may choose to make use of them~
+
+- `*.dns.qinguan.me` - DoT / DoH DNS
+- `hbbs.qinguan.me:21117` - RustDesk `hbbs`
+
 ## :computer: Work stuff
 
 ### SST Alumni Association
