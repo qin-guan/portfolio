@@ -10,6 +10,10 @@ export default defineConfig({
   },
   head: [
     [
+      'meta',
+      { name: 'google-adsense-account', content: 'ca-pub-1586897931312395' },
+    ],
+    [
       'script',
       { id: 'ms-clarity' },
       `(function(c,l,a,r,i,t,y){
