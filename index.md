@@ -6,10 +6,6 @@ import Days from './components/Days.vue'
 
 # Hey :wave:, I'm Qin Guan
 
-I am <Days /> from OWADIO-ing.
-
-[I am also very broke, please gib money](https://buy.stripe.com/fZedS2f33gYW0Du8wx)
-
 ## Free stuff
 
 Some of these services below are provided for free on my domain. You may choose to make use of them~
