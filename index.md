@@ -1,9 +1,3 @@
-<script setup>
-
-import Days from './components/Days.vue'
-
-</script>
-
 # Hey :wave:, I'm Qin Guan
 
 ## Free stuff
@@ -38,9 +32,9 @@ I worked on internal tooling, infra, the public API, and new [developer portal](
 
 ## :school: School stuff
 
-### NUS <Badge type="tip" text="Soon" />
+### NUS <Badge text="Present" />
 
-I will be pursuing a Bachelor's in Information Security and Minor in Mathematics at the National University of Singapore.
+I am pursuing a Bachelor's in Information Security and Minor in Mathematics at the National University of Singapore.
 
 ### Ngee Ann Polytechnic <Badge type="tip" text="2021 - 2024" />
 
@@ -76,24 +70,8 @@ The ducks were definitely the most important part of the hackathon.
 
 I make website.
 
-### President, Overflow SIG
+### Others
 
-I was the president of the Programming and Technology Special Interest Group in Ngee Ann Polytechnic. During my term, I worked closely with my team to organize workshops, events and competitions for our club members.
-
-I spearheaded many initiatives within the club to improve transparency, teamwork, and our member engagement.
-
-> Many of our works can be found here <https://github.com/np-overflow>
->
-> Please check out our website as well! <https://np-overflow.club>
-
-### Tech Lead, NullSec SIG
-
-I was a technical lead for the Cybersecurity Special Interest Group in Ngee Ann Polytechnic.
-
-> Many of our works can be found here <https://github.com/NullSec-SIG>
->
-> Please check out our website as well! <https://nullsecsig.com>
-
-### Vice-President, ICT Society
-
-I was the VP of Projects in the Society for the School of ICT in Ngee Ann Polytechnic. I worked closely with my team to organize flagship events for our school.
+- President, Overflow SIG
+- Tech Lead, NullSec SIG
+- Vice-President, ICT Society
