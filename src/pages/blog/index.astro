@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+<BaseLayout title="Blog" description="Posts by Qin Guan">
+  <h1>Blog</h1>
+  <p class="meta">Notes and write-ups. Powered by Astro content collections.</p>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li>
+        <time datetime={post.data.date.toISOString()}>
+          {post.data.date.toLocaleDateString('en-SG', { year: 'numeric', month: 'short', day: 'numeric' })}
+        </time>
+        <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+        <p>{post.data.description}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

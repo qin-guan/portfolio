@@ -7,5 +7,6 @@ dist
 .DS_Store
 .eslintcache
 .idea
+.astro
 .vitepress/dist
 .vitepress/cache
