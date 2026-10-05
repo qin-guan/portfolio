@@ -16,16 +16,26 @@ const nav = [
   { href: '/blog', label: 'Blog' },
   { href: 'https://qinguan.me/cv.pdf', label: 'CV', external: true },
 ];
+const social = [
+  { href: 'https://github.com/qin-guan', label: 'GitHub' },
+  { href: 'https://linkedin.com/in/qin-guan', label: 'LinkedIn' },
+];
+const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+const year = new Date().getFullYear();
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content={description} />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d0f14" media="(prefers-color-scheme: dark)" />
     <meta name="google-adsense-account" content="ca-pub-1586897931312395" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <title>{pageTitle}</title>
+    <script is:inline>document.documentElement.classList.add('js');</script>
     <script is:inline id="ms-clarity">
       (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -35,29 +45,85 @@ const nav = [
     </script>
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary">
-        <a class="nav-brand" href="/">Qin Guan</a>
-        <div class="nav-links">
-          {nav.map((item) => (
-            item.external ? (
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header" data-menu-open="false">
+      <div class="nav">
+        <a class="nav-brand" href="/">
+          <span class="nav-brand-mark" aria-hidden="true">QG</span>
+          <span>Qin Guan</span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu" id="site-menu">
+          <nav class="nav-links" aria-label="Primary">
+            {nav.map((item) => (
+              item.external ? (
+                <a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a>
+              ) : (
+                <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+              )
+            ))}
+          </nav>
+          <div class="social">
+            {social.map((item) => (
               <a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a>
-            ) : (
-              <a href={item.href} aria-current={path === item.href || (item.href !== '/' && path.startsWith(item.href)) ? 'page' : undefined}>{item.label}</a>
-            )
-          ))}
+            ))}
+          </div>
         </div>
-        <div class="social">
-          <a href="https://github.com/qin-guan" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/qin-guan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </nav>
+      </div>
     </header>
-    <main class="main">
+    <main class="main prose" id="content">
       <slot />
     </main>
     <footer class="site-footer">
       <p>Average software enjoyer · <a href="https://qinguan.me">qinguan.me</a></p>
+      <p class="site-footer-links">
+        {social.map((item) => (
+          <a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a>
+        ))}
+        <span>© {year}</span>
+      </p>
     </footer>
+    <script is:inline>
+      (function () {
+        var header = document.querySelector('.site-header');
+        var btn = header && header.querySelector('.nav-toggle');
+        var menu = document.getElementById('site-menu');
+        if (!header || !btn || !menu) return;
+        var mq = window.matchMedia('(min-width: 768px)');
+        function setOpen(open) {
+          header.setAttribute('data-menu-open', open ? 'true' : 'false');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+          btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        }
+        btn.addEventListener('click', function () {
+          setOpen(btn.getAttribute('aria-expanded') !== 'true');
+        });
+        menu.addEventListener('click', function (e) {
+          if (e.target.closest && e.target.closest('a')) setOpen(false);
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+            setOpen(false);
+            btn.focus();
+          }
+        });
+        document.addEventListener('click', function (e) {
+          if (btn.getAttribute('aria-expanded') === 'true' && !header.contains(e.target)) setOpen(false);
+        });
+        var onChange = function (e) { if (e.matches) setOpen(false); };
+        if (mq.addEventListener) mq.addEventListener('change', onChange);
+        else if (mq.addListener) mq.addListener(onChange);
+      })();
+    </script>
   </body>
 </html>
