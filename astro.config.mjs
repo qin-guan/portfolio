@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import { unified } from '@astrojs/markdown-remark';
 
 /**
  * Tiny dependency-free rehype plugin: wrap every markdown <table> in
@@ -30,9 +31,11 @@ export default defineConfig({
   site: 'https://qinguan.me',
   integrations: [mdx(), sitemap()],
   markdown: {
-    shikiConfig: {
-      theme: 'github-dark',
-    },
-    rehypePlugins: [rehypeWrapTables],
+    processor: unified({
+      shikiConfig: {
+        theme: 'github-dark',
+      },
+      rehypePlugins: [rehypeWrapTables],
+    }),
   },
 });
